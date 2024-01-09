@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Александр Мазур](https://up.htmlacademy.ru/adaptive-individual/1/user/1888983).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
