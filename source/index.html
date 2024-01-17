@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav logo" href="/">
+        <a class="main-nav logo" href="">
           <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -143,7 +143,38 @@
         </a>
       </div>
     </footer>
-
+    <div class="modal modal--is-closed">
+      <div class="modal__content">
+        <h2 class="modal__title section-title section-title--big">Добавить в корзину</h2>
+        <p class="modal__text"></p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__filter modal-filter">
+            <legend class="modal-filter__title">Выберите размер:</legend>
+            <ul class="modal-filter__list">
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="small" checked>
+                  <span class="modal-filter__mark">S</span>
+                </label>
+              </li>
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="medium">
+                  <span class="modal-filter__mark">M</span>
+                </label>
+              </li>
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="large" checked>
+                  <span class="modal-filter__mark">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__button button button--secondary" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
 
   </body>
 </html>
