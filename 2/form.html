@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <base href="https://htmlacademy-adaptive.github.io/1888983-mishka-1/2/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-nav logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__search" href="#">Поиск по сайту</a>
+            <!-- Тут сложно сказать, какой именно будет функционал.
+            Перенос на другую страницу? Раскрывающийся поиск? Отталкивался
+            от того, что это отдельная страница. -->
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <h1 class="intro__title main-title">Вязание на заказ</h1>
+      </section>
+      <section class="main-form">
+        <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
+        <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">Тип</legend>
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="radio" name="type" value="accessory" checked>
+                  <span class="main-form__mark mark mark--radio"></span>
+                  <span class="main-form__name">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="radio" name="type" value="toy">
+                  <span class="main-form__mark mark mark--radio"></span>
+                  <span class="main-form__name">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">Цвет</legend>
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="white" checked>
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Белый</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="grey" checked>
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Серый</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="tiffani">
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Тиффани</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="black">
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Черный</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="pink">
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Розовый</span>
+                </label>
+              </li>
+              <li class="main-form__item">
+                <label class="main-form__control">
+                  <input class="visually-hidden main-form__control-input" type="checkbox" name="orange">
+                  <span class="main-form__mark mark mark--checkbox"></span>
+                  <span class="main-form__name">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">ФИО</legend>
+            <ul class="main-form__list">
+              <li class="main-form__item form-field">
+                <label class="form-field__title" for="name">Имя:</label>
+                <input class="form-field__field" type="text" name="name" id="name" placeholder="Введите ваше имя*" autocomplete="on" required>
+              </li>
+              <li class="main-form__item form-field">
+                <label class="form-field__title" for="surname">Фамилия:</label>
+                <input class="form-field__field" type="text" name="surname" id="surname" placeholder="Введите фамилию*" autocomplete="on" required>
+              </li>
+              <li class="main-form__item form-field">
+                <label class="form-field__title" for="middle-name">Отчество:</label>
+                <input class="form-field__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" autocomplete="on">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">Тел</legend>
+              <div class="form-field">
+                <label class="visually-hidden" for="tel">Телефон:</label>
+                <input class="form-field__field form-field__field--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" autocomplete="on" required>
+              </div>
+          </fieldset>
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">E-mail</legend>
+              <div class="form-field">
+                <label class="visually-hidden" for="email">Электронная почта:</label>
+                <input class="form-field__field form-field__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" autocomplete="on" required>
+              </div>
+          </fieldset>
+          <fieldset class="main-form__filter main-form-filter">
+            <legend class="main-form__title">Доп</legend>
+            <label class="visually-hidden" for="additional">Опишите все ваши пожелания к заказу</label>
+            <textarea class="main-form__description" name="description" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <small class="main-form__note">*Поля обязательны для заполнения</small>
+          <button class="main-form__button button button--primary" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontatke" target="_blank" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы Вконтекте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" target="_blank" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Youtube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" target="_blank" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Telegram.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
