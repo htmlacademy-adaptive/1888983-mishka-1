@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-nav logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__search" href="#">Поиск по сайту</a>
+            <!-- Тут сложно сказать, какой именно будет функционал.
+            Перенос на другую страницу? Раскрывающийся поиск? Отталкивался
+            от того, что это отдельная страница. -->
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <h1 class="intro__title main-title">Каталог товаров</h1>
+      </section>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" src="img/rabbit-mobile.jpg" width="260" height="195" alt="">
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__link" href="#">
+                <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+              </a>
+              <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+              <b class="catalog-item__price">1 200 руб.</b>
+              <button class="catalog-item__button button button--cart">
+                <span class="visually-hidden">Купить.</span>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" src="img/laundry-basket-mobile.jpg" width="260" height="195" alt="">
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__link" href="#">
+                <h2 class="catalog-item__title">Корзинка для белья</h2>
+              </a>
+              <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+              <b class="catalog-item__price">690 руб.</b>
+              <button class="catalog-item__button button button--cart">
+                <span class="visually-hidden">Купить.</span>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" src="img/big-toy-basket-mobile.jpg" width="260" height="195" alt="">
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__link" href="#">
+                <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+              </a>
+              <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+              <b class="catalog-item__price">1 500 руб.</b>
+              <button class="catalog-item__button button button--cart">
+                <span class="visually-hidden">Купить.</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="making-of">
+        <h2 class="making-of__title">Процесс производства</h2>
+        <div class="making-of__video">
+          <img class="making-of__video-image" src="img/video-mobile.jpg" width="260" height="150" alt="Обложка ролика о произведстве корзинок.">
+          <button class="making-of__play-button" type="button">
+            <span class="visually-hidden">Воспроизвести ролик.</span>
+          </button>
+        </div>
+        <p class="making-of__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="making-of__button button button--primary" href="form.html">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontatke" target="_blank" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы Вконтекте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" target="_blank" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Youtube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" target="_blank" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Telegram.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+    <div class="modal modal--is-closed">
+      <div class="modal__content">
+        <h2 class="modal__title section-title section-title--big">Добавить в корзину</h2>
+        <p class="modal__text"></p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__filter modal-filter">
+            <legend class="modal-filter__title">Выберите размер:</legend>
+            <ul class="modal-filter__list">
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="small" checked>
+                  <span class="modal-filter__mark mark mark--modal">S</span>
+                </label>
+              </li>
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="medium">
+                  <span class="modal-filter__mark mark mark--modal">M</span>
+                </label>
+              </li>
+              <li class="modal-filter__item">
+                <label class="modal-filter__control">
+                  <input class="visually-hidden modal-filter__control-input" type="radio" name="size" value="large">
+                  <span class="modal-filter__mark mark mark--modal">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__button button button--secondary" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>
