@@ -1,0 +1,12 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: #000000;
+}

@@ -8,29 +8,26 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav logo" href="">
+        <a class="main-nav__logo logo" href="">
           <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__search" href="#">Поиск по сайту</a>
-            <!-- Тут сложно сказать, какой именно будет функционал.
-            Перенос на другую страницу? Раскрывающийся поиск? Отталкивался
-            от того, что это отдельная страница. -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--login" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
