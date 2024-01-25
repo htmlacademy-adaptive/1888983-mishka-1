@@ -12,13 +12,13 @@
   @include list;
 }
 
+.main-nav__list:last-child {
+  border-bottom: 1px solid #ececec;
+}
+
 .main-nav__item {
   border-top: 1px solid #ececec;
   line-height: 24px;
-}
-
-.main-nav__item:last-child {
-  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__link {
