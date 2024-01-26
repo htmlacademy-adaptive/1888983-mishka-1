@@ -1,0 +1,53 @@
+.reviews__title {
+  margin-bottom: 14px;
+}
+
+.reviews__item {
+  display: none;
+  margin: 0;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 32px;
+  line-height: 30px;
+}
+
+.reviews__author {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__handle {
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.reviews__wrapper {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__prev,
+.reviews__next {
+  display: block;
+  width: 130px;
+  height: 52px;
+  border: 1px solid #ececec;
+  background: url("../../img/huge-arrow.svg") no-repeat center;
+}
+
+.reviews__next {
+  transform: rotate(180deg);
+}
+
+.reviews__button {
+  margin-bottom: 46px;
+}
