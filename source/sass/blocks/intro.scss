@@ -21,6 +21,7 @@
 
 .intro__list {
   @include list;
+  margin-bottom: 30px;
 }
 
 .intro__list__item {
