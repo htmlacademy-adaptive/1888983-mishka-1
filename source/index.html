@@ -5,7 +5,9 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body class="page__body">
+
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav__logo logo" href="">
@@ -32,9 +34,11 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-container">
-      <section class="intro intro--index">
-        <h1 class="intro__title title">Милые штуки ручной работы&nbspдля дома</h1>
+
+      <section class="main-container__intro intro intro--index">
+        <h1 class="intro__title intro-title--index title">Милые штуки ручной работы&nbspдля дома</h1>
         <ul class="intro__list">
           <li class="intro__list__item">
             <a class="intro__list__link intro__list__link--interior" href="#">Предметы интерьера</a>
@@ -45,9 +49,9 @@
         </ul>
       </section>
 
-      <section class="featured">
-        <h2 class="feautred__title title--secondary">Вязаные корзинки</h2>
-        <span class="feautred__subtitle">Товар недели</span>
+      <section class="main-container__featured featured">
+        <h2 class="featured__title title title--secondary">Вязаные корзинки</h2>
+        <span class="featured__subtitle title">Товар недели</span>
         <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <dl class="featured__list">
           <div class="featured__item">
@@ -67,7 +71,8 @@
         <p class="featured__price">Цена: 990 руб.</p>
         <button class="featured__button button button--primary" type="button">Заказать</button>
       </section>
-      <section class="about">
+
+      <section class="main-container__wrapper about">
         <h2 class="about__title title--secondary">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item about__item--ecology">Экологически чистые материалы</li>
@@ -96,7 +101,8 @@
           <a class="reviews__button button button--primary" href="#">Написать</a>
         </div>
       </section>
-      <section class="contacts">
+
+      <section class="main-container__wrapper contacts">
         <h2 class="contacts__title title--secondary">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -110,10 +116,10 @@
             <span class="contacts__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
           </li>
         </ul>
-        <!-- Судя по всему, карта добавляется в 5 модуле, пока не трогал. -->
         <a class="contacts__button button button--primary" href="#">Напишите нам</a>
       </section>
     </main>
+
     <footer class="main-footer">
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -141,6 +147,7 @@
         </a>
       </div>
     </footer>
+
     <div class="modal modal--is-closed">
       <div class="modal__content">
         <h2 class="modal__title section-title section-title--big">Добавить в корзину</h2>

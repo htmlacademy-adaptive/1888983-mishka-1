@@ -1,5 +1,11 @@
 .title {
+  margin: 0;
   font-size: 27px;
-  color: #000000;
+  font-weight: 700;
   line-height: 30px;
+  color: #000000;
+}
+
+.title--secondary {
+  font-size: 25px;
 }
