@@ -1,53 +1,53 @@
-.making-of {
+.making {
   display: flex;
   flex-direction: column;
 }
 
-.making-of__wrapper {
+.making__wrapper {
   padding: 22px 30px 0;
   border: 1px solid #ececec;
 }
 
-.making-of__wrapper--title {
+.making__wrapper--title {
   display: flex;
   align-items: center;
   padding-bottom: 26px;
 }
 
-.making-of__wrapper--text {
+.making__wrapper--text {
   padding-top: 34px;
   margin-bottom: 28px;
 }
 
-.making-of__icon {
+.making__icon {
   width: 100%;
   margin-right: 24px;
 }
 
-.making-of__title {
+.making__title {
   min-width: auto;
 }
 
-.making-of__video {
+.making__video {
   position: relative;
 }
 
-.making-of__video-image {
+.making__video-image {
   display: block;
 }
 
-.making-of__play-button {
+.making__play-button {
   @include center;
   border-radius: 50%;
 }
 
-.making-of__text {
+.making__text {
   margin: 0;
   margin-bottom: 40px;
   font-size: 13px;
 }
 
-.making-of__button {
+.making__button {
   padding: 18px 10px;
   margin-bottom: 32px;
 }
