@@ -10,7 +10,7 @@
 }
 
 .modal--is-closed {
-  display: none;
+  display: block;
 }
 
 .modal__content {
@@ -37,6 +37,3 @@
 .modal__filter {
   margin-bottom: 30px;
 }
-
-/* Что-то совсем запутался в кнопках формы в модалке. Я правильно поставил
-активный модификатор label? Или надо было размеры и рамки давать mark?..*/
