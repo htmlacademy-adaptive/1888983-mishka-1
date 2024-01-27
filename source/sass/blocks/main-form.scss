@@ -1,0 +1,65 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.main-form__form {
+  margin-bottom: 24px;
+}
+
+.main-form__filter {
+  @include fieldset;
+  margin-bottom: 10px;
+}
+
+.main-form__title {
+  margin-bottom: 20px;
+}
+
+.main-form__list {
+  @include list;
+  line-height: 18px;
+}
+
+.main-form__item {
+  margin-bottom: 20px;
+}
+
+/* Чекбоксы пока не стилизовал, это декоративное. */
+
+.main-form__description {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 142px;
+  margin-bottom: 6px;
+  padding: 17px;
+  border: 2px solid #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  resize: none;
+}
+
+.main-form__description::placeholder {
+  opacity: 0.3;
+}
+
+.main-form__description:focus-visible {
+  outline: none;
+}
+
+.main-form__note {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}

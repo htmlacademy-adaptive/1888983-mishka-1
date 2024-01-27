@@ -1,5 +1,10 @@
 .main-nav {
   display: flex;
+  flex-direction: column;
+}
+
+.main-nav__wrapper {
+  display: flex;
 }
 
 .main-nav__logo {
@@ -7,6 +12,7 @@
 }
 
 .main-nav__toggle {
+  outline: 1px solid #0000ff;
   width: 44px;
   height: 44px;
   margin: 20px;

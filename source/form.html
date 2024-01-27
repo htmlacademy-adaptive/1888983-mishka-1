@@ -6,45 +6,49 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
+
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav logo" href="index.html">
-          <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+          </a>
+          <button class="main-nav__toggle button" type="button">
+            <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
+          </button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__search" href="#">Поиск по сайту</a>
-            <!-- Тут сложно сказать, какой именно будет функционал.
-            Перенос на другую страницу? Раскрывающийся поиск? Отталкивался
-            от того, что это отдельная страница. -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--login" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main-container">
-      <section class="intro">
-        <h1 class="intro__title main-title">Вязание на заказ</h1>
+      <section class="main-container__wrapper intro">
+        <h1 class="intro__title title">Вязание на заказ</h1>
       </section>
-      <section class="main-form">
+
+      <!-- Тут поставил внизу марджин 30 пикселей, как в индексе и каталоге. -->
+
+      <section class="main-container__wrapper main-form">
         <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
         <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">Тип</legend>
+          <fieldset class="main-form__filter">
+            <legend class="main-form__title title title--form">Тип</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
                 <label class="main-form__control">
@@ -63,7 +67,7 @@
             </ul>
           </fieldset>
           <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">Цвет</legend>
+            <legend class="main-form__title title title--form">Цвет</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
                 <label class="main-form__control">
@@ -110,7 +114,7 @@
             </ul>
           </fieldset>
           <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">ФИО</legend>
+            <legend class="main-form__title title title--form">ФИО</legend>
             <ul class="main-form__list">
               <li class="main-form__item form-field">
                 <label class="form-field__title" for="name">Имя:</label>
@@ -127,21 +131,21 @@
             </ul>
           </fieldset>
           <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">Тел</legend>
+            <legend class="main-form__title title title--form">Тел</legend>
               <div class="form-field">
                 <label class="visually-hidden" for="tel">Телефон:</label>
                 <input class="form-field__field form-field__field--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" autocomplete="on" required>
               </div>
           </fieldset>
           <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">E-mail</legend>
+            <legend class="main-form__title title title--form">E-mail</legend>
               <div class="form-field">
                 <label class="visually-hidden" for="email">Электронная почта:</label>
                 <input class="form-field__field form-field__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" autocomplete="on" required>
               </div>
           </fieldset>
           <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title">Доп</legend>
+            <legend class="main-form__title title title--form">Доп</legend>
             <label class="visually-hidden" for="additional">Опишите все ваши пожелания к заказу</label>
             <textarea class="main-form__description" name="description" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
@@ -150,6 +154,7 @@
         </form>
       </section>
     </main>
+
     <footer class="main-footer">
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -173,6 +178,9 @@
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35" fill="none">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
+          </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
