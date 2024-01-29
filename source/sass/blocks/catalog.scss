@@ -1,0 +1,12 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__list {
+  @include list;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 30px;
+}

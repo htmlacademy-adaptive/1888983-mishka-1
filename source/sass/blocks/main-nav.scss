@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__wrapper {
+  display: flex;
+}
+
+.main-nav__logo {
+  margin: 22px auto 22px 116px;
+}
+
+.main-nav__toggle {
+  outline: 1px solid #0000ff;
+  width: 44px;
+  height: 44px;
+  margin: 20px;
+  padding: 12px;
+}
+
+.main-nav__list {
+  @include list;
+  display: none;
+}
+
+.main-nav__list:last-child {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__item {
+  border-top: 1px solid #ececec;
+  line-height: 24px;
+}
+
+.main-nav__link {
+  @include link;
+  display: block;
+  padding: 28px 30px 28px 76px;
+}

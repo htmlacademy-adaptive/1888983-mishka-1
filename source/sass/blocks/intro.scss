@@ -1,0 +1,41 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #f1f1f1;
+  min-height: 178px;
+}
+
+.intro--index {
+  background: url("../img/hero-mobile.jpg") no-repeat;
+}
+
+.intro__title {
+  display: block;
+  margin: 90px 30px 72px;
+  text-align: center;
+}
+
+.intro-title--index {
+  margin-bottom: 120px;
+}
+
+.intro__list {
+  @include list;
+}
+
+.intro__list__item {
+  background-color: #63d1bb;
+}
+
+.intro__list__item--secondary {
+  background-color: #56c3b2;
+}
+
+.intro__list__link {
+  @include link;
+  display: block;
+  padding: 24px 160px 30px 30px;
+  font-size: 19px;
+  color: #ffffff;
+}

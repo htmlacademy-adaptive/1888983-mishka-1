@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__list {
+  @include list;
+}
+
+.about__item {
+  margin-bottom: 28px;
+  line-height: 20px;
+}
+
+.about__image {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  width: auto;
+  height: 38px;
+}
