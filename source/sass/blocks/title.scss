@@ -30,3 +30,11 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .title,
+  .title--secondary {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

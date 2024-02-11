@@ -7,17 +7,14 @@
 }
 
 .intro--index {
-  background: url("../img/hero-mobile.jpg") no-repeat center;
+  background: url("../img/hero-mobile.jpg") no-repeat;
+  min-height: 506px;
 }
 
 .intro__title {
   display: block;
   margin: 90px 30px 72px;
   text-align: center;
-}
-
-.intro-title--index {
-  margin-bottom: 120px;
 }
 
 .intro__list {
@@ -45,5 +42,19 @@
   .intro__list {
     display: flex;
     margin: 0 52px;
+  }
+
+  .intro-title--index {
+    margin: 154px 52px 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__list {
+    margin: 0 50px;
+  }
+
+  .intro-title--index {
+    margin: 158px 225px 354px;
   }
 }
