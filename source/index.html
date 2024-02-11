@@ -19,7 +19,7 @@
             <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
           </button>
         </div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--site">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -27,7 +27,7 @@
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
@@ -35,6 +35,15 @@
             <a class="main-nav__link main-nav__link--login" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="main-nav__list main-nav__list--additional">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--login" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-nav__delivery">Бесплатная доставка по России</p>
       </nav>
     </header>
 
@@ -52,8 +61,10 @@
       </section>
 
       <section class="main-container__wrapper featured">
-        <h2 class="featured__title title title--secondary">Вязаные корзинки</h2>
-        <span class="featured__subtitle title">Товар недели</span>
+        <div class="featured__wrapper">
+          <h2 class="featured__title title title--secondary">Вязаные корзинки</h2>
+          <span class="featured__subtitle title">Товар недели</span>
+        </div>
         <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <dl class="featured__list">
           <div class="featured__item">

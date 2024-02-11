@@ -7,7 +7,7 @@
 }
 
 .intro--index {
-  background: url("../img/hero-mobile.jpg") no-repeat;
+  background: url("../img/hero-mobile.jpg") no-repeat center;
 }
 
 .intro__title {
@@ -25,6 +25,7 @@
 }
 
 .intro__list__item {
+  width: 100%;
   background-color: #63d1bb;
 }
 
@@ -36,6 +37,13 @@
   @include link;
   display: block;
   padding: 24px 160px 30px 30px;
-  font-size: 19px;
+  font-size: 20px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__list {
+    display: flex;
+    margin: 0 52px;
+  }
 }
