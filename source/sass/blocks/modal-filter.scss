@@ -31,3 +31,9 @@
 .modal-filter__control-input:checked + .modal-filter__mark {
   border-color: #63d1bb;
 }
+
+@media (min-width: $tablet-width) {
+  .modal-filter__mark {
+    width: 112px;
+  }
+}

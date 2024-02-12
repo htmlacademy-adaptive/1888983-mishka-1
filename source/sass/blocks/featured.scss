@@ -84,7 +84,7 @@
 @media (min-width: $desktop-width) {
   .featured {
     display: grid;
-    grid-template-columns: 1fr 56.75%;
+    grid-template-columns: 1fr auto;
     grid-gap: 0 58px;
     padding-left: 225px;
   }

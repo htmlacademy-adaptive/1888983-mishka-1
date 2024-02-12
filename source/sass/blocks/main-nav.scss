@@ -19,6 +19,10 @@
   display: none;
 }
 
+.main-nav__list--user {
+  justify-self: end;
+}
+
 .main-nav__list:last-child {
   border-bottom: 1px solid #ececec;
 }

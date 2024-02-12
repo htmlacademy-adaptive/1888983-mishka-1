@@ -1,12 +1,12 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 22px 38px;
   line-height: 0;
 }
 
 .copyright__text {
+  margin-right: 26px;
   font-size: 19px;
   line-height: 19px;
+  color: #000000;
 }
