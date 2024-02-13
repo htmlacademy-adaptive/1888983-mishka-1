@@ -34,6 +34,28 @@
   left: 6px;
   width: 24px;
   height: 17px;
-  background: url("../img/form-tick-checkbox.svg") no-repeat;
+  background: url("../img/form-tick-checkbox-mobile.svg") no-repeat;
   content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .mark {
+    width: 52px;
+    height: 52px;
+  }
+
+  .main-form__control-input[type="radio"]:checked + .mark--radio::before {
+    top: 13px;
+    left: 13px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .main-form__control-input[type="checkbox"]:checked + .mark--checkbox::before {
+    top: 14px;
+    left: 8px;
+    width: 33px;
+    height: 22px;
+    background: url("../img/form-tick-checkbox.svg") no-repeat;
+  }
 }

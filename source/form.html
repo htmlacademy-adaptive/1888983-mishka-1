@@ -53,11 +53,13 @@
 
       <!-- Тут поставил внизу марджин 30 пикселей, как в индексе и каталоге. -->
 
-      <section class="main-container__wrapper main-form">
-        <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
-        <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <section class="main-form">
+        <div class="main-container__wrapper main-form--header">
+          <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
+          <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
         <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="main-form__filter">
+          <div role="group" class="main-container__wrapper main-form__filter">
             <legend class="main-form__title title title--form">Тип</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
@@ -75,10 +77,10 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="main-form__filter main-form-filter">
+          </div>
+          <div role="group" class="main-container__wrapper main-form__filter main-form__filter--grey">
             <legend class="main-form__title title title--form">Цвет</legend>
-            <ul class="main-form__list">
+            <ul class="main-form__list main-form__list--secondary">
               <li class="main-form__item">
                 <label class="main-form__control main-form__control--checkbox">
                   <input class="visually-hidden main-form__control-input" type="checkbox" name="white" checked>
@@ -122,8 +124,8 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="main-form__filter main-form-filter">
+          </div>
+          <div role="group" class="main-container__wrapper main-form__filter">
             <legend class="main-form__title title title--form">ФИО</legend>
             <ul class="main-form__list">
               <li class="main-form__item form-field">
@@ -132,35 +134,41 @@
               </li>
               <li class="main-form__item form-field">
                 <label class="form-field__title" for="surname">Фамилия:</label>
-                <input class="form-field__field" type="text" name="surname" id="surname" placeholder="Введите фамилию*" autocomplete="on" required>
+                <input class="form-field__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" autocomplete="on" required>
               </li>
               <li class="main-form__item form-field">
                 <label class="form-field__title" for="middle-name">Отчество:</label>
                 <input class="form-field__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" autocomplete="on">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title title title--form">Тел</legend>
-              <div class="form-field">
-                <label class="visually-hidden" for="tel">Телефон:</label>
-                <input class="form-field__field form-field__field--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" autocomplete="on" required>
-              </div>
-          </fieldset>
-          <fieldset class="main-form__filter main-form-filter">
-            <legend class="main-form__title title title--form">E-mail</legend>
-              <div class="form-field">
-                <label class="visually-hidden" for="email">Электронная почта:</label>
-                <input class="form-field__field form-field__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" autocomplete="on" required>
-              </div>
-          </fieldset>
-          <fieldset class="main-form__filter main-form-filter">
+          </div>
+          <div role="group" class="main-container__wrapper main-form__filter main-form__filter--grey">
+            <ul class="main-form__list main-form__list--contacts">
+              <li class="main-form__item">
+                <legend class="main-form__title title title--form">Тел</legend>
+                <div class="form-field">
+                  <label class="visually-hidden" for="tel">Телефон:</label>
+                  <input class="form-field__field form-field__field--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" autocomplete="on" required>
+                </div>
+              </li>
+              <li class="main-form__item">
+                <legend class="main-form__title title title--form">E-mail</legend>
+                <div class="form-field">
+                  <label class="visually-hidden" for="email">Электронная почта:</label>
+                  <input class="form-field__field form-field__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" autocomplete="on" required>
+                </div>
+              </li>
+            </div>
+          </ul>
+          <div role="group" class="main-container__wrapper main-form__filter">
             <legend class="main-form__title title title--form">Доп</legend>
             <label class="visually-hidden" for="additional">Опишите все ваши пожелания к заказу</label>
             <textarea class="main-form__description" name="description" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-          <small class="main-form__note">*Поля обязательны для заполнения</small>
-          <button class="main-form__button button button--primary" type="submit">Отправить заказ</button>
+          </div>
+          <div role="group" class="main-container__wrapper main-form__wrapper">
+            <small class="main-form__note">*Поля обязательны для заполнения</small>
+            <button class="main-form__button button button--primary" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
