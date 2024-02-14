@@ -14,8 +14,8 @@
 }
 
 .main-form__filter {
-  @include fieldset;
-  margin-bottom: 10px;
+  padding: 0 30px;
+  margin-bottom: 30px;
 }
 
 .main-form__title {
@@ -31,7 +31,17 @@
   margin-bottom: 20px;
 }
 
-/* Чекбоксы пока не стилизовал, это декоративное. */
+.main-form__control {
+  position: relative;
+  display: flex;
+  padding-left: 60px;
+  min-height: 42px;
+  align-items: center;
+}
+
+.main-form__control--checkbox {
+  min-height: 38px;
+}
 
 .main-form__description {
   display: block;
@@ -41,7 +51,7 @@
   margin-bottom: 6px;
   padding: 17px;
   border: 2px solid #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -62,4 +72,109 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form--header {
+    margin-bottom: 10px;
+  }
+
+  .main-form__text {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .main-form__filter {
+    display: flex;
+    padding: 50px 50px;
+    margin-bottom: 0;
+  }
+
+  .main-form__filter--grey {
+    background-color: #f1f1f1;
+  }
+
+  .main-form__title {
+    min-width: 100px;
+    margin-right: 66px;
+    padding-top: 16px;
+  }
+
+  .title--form {
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .main-form__list {
+    flex-grow: 1;
+  }
+
+  .main-form__control {
+    min-height: 52px;
+    padding-left: 70px;
+  }
+
+  .main-form__list--secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Вообще, по макету там 262 пикселя на колонку, но в этом случае
+  на десктопе последняя колонка будет вываливаться на паддинг,
+  потому что она-т по макету меньше, чем все остальные.
+  Ну и, конечно, ничего не тянется.*/
+
+  .main-form__item {
+    display: flex;
+    margin-right: auto;
+    font-size: 19px;
+  }
+
+  .main-form__list--contacts {
+    width: 100%;
+  }
+
+  .main-form__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-form__note {
+    order: 2;
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+
+  .main-form__button {
+    width: 230px;
+    padding: 18px 30px;
+    font-size: 17px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form--header {
+    padding: 0 225px;
+  }
+
+  .main-form__filter {
+    padding: 50px 225px 50px 100px;
+  }
+
+  .main-form__title {
+    min-width: 100px;
+    margin-right: 26px;
+    padding-top: 16px;
+  }
+
+  .main-form__list--secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main-form__wrapper {
+    padding: 0 225px;
+  }
 }

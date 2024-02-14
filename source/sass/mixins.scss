@@ -11,12 +11,6 @@
   color: #000000;
 }
 
-@mixin fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 @mixin center {
   position: absolute;
   top: 50%;

@@ -55,3 +55,59 @@
 .featured__button {
   margin-bottom: 36px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 42px;
+  }
+
+  .featured__wrapper {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+  }
+
+  .featured__subtitle {
+    width: 100px;
+    text-align: center;
+  }
+
+  .featured__image {
+    grid-column: 2/3;
+    grid-row: 2/6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 0 58px;
+    padding-left: 225px;
+  }
+
+  .featured__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 2;
+    margin-left: -142px;
+  }
+
+  .featured__title {
+    order: 2;
+  }
+
+  .featured__subtitle {
+    margin-right: 42px;
+  }
+
+  .featured__image {
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+}

@@ -1,8 +1,22 @@
 .main-container {
+  max-width: 1150px;
   margin: 0 auto;
 }
+
+/*Пока что ограничил максимальную ширину, потому что на нативном разрешении монитора,
+которое выше 1150px, выглядит кошмарно.*/
 
 .main-container__wrapper {
   margin-bottom: 30px;
   padding: 0 30px;
+}
+
+.main-container__wrapper--grey {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__wrapper {
+    padding: 0 50px;
+  }
 }
