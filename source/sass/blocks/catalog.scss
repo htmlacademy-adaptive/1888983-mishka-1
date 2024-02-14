@@ -10,3 +10,21 @@
 .catalog__item:not(:last-child) {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 50px;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
