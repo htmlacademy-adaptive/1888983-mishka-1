@@ -6,17 +6,51 @@
   margin: 22px auto 22px 116px;
 }
 
+.main-nav__logo-image {
+  display: block;
+}
+
 .main-nav__toggle {
-  outline: 1px solid #0000ff;
-  width: 44px;
-  height: 44px;
-  margin: 20px;
-  padding: 12px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+}
+
+.main-nav--is-closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  height: 2px;
+  width: 20px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.main-nav--is-open .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 20px;
+  width: 21px;
+  background-image: url("../img/menu-close.svg");
+}
+
+.main-nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active::before {
+  opacity: 0.3;
 }
 
 .main-nav__list {
   @include list;
-  display: none;
+  display: block;
+  width: 100%;
+  z-index: 2;
 }
 
 .main-nav__list--user {
@@ -28,6 +62,8 @@
 }
 
 .main-nav__item {
+  position: relative;
+  background-color: #ffffff;
   border-top: 1px solid #ececec;
   line-height: 24px;
 }
@@ -36,6 +72,12 @@
   @include link;
   display: block;
   padding: 28px 30px 28px 76px;
+}
+
+.main-nav__link--icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
 }
 
 .main-nav__delivery {
@@ -47,6 +89,33 @@
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--is-closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--is-open .main-nav__list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    min-height: 158px;
+    z-index: 10;
+  }
+
+  .main-nav--is-open .main-nav__list--user {
+    top: 240px;
+    /* Мне не нравится этот вариант, потому что он не работает с переполнением.*/
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: grid;
@@ -54,16 +123,60 @@
     align-items: center;
   }
 
+  .main-nav__wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav__logo {
+    margin: 22px auto 20px 48px;
+  }
+
   .main-nav__list {
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-nav__list--site {
     grid-row: 2/3;
+    border: none;
   }
 
   .main-nav__list--user {
     grid-column: 2/3;
+  }
+
+  .main-nav__item {
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 82px;
+  }
+
+  .main-nav__list--site .main-nav__item {
+    border: none;
+
+    &:first-child {
+      margin-left: 36px;
+    }
+  }
+
+  .main-nav__link {
+    padding: 32px 52px 32px 82px;
+  }
+
+  .main-nav__link--no-text {
+    width: 82px;
+    height: 88px;
+    padding: 0;
+  }
+
+  .main-nav__link--search {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .main-nav__link--site {
+    padding: 22px 12px 18px 20px;
+    font-size: 15px;
   }
 
   .main-nav__toggle {
@@ -76,6 +189,8 @@
 
   .main-nav__delivery {
     display: block;
+    margin-right: 0;
+    padding-right: 50px;
   }
 }
 
@@ -84,15 +199,19 @@
     display: grid;
     grid-template-columns: 40% 1fr 45%;
     align-items: center;
+    margin: 0 20px;
   }
 
   .main-nav__logo {
     grid-column: 2/3;
-    margin: auto;
+    margin: 8px auto;
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__list {
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-nav__list--site {
@@ -102,17 +221,44 @@
 
   .main-nav__list--user {
     grid-column: 3/4;
+    justify-content: end;
   }
 
-  .main-nav__toggle {
-    display: none;
+  .main-nav__list--site .main-nav__item:first-child {
+    margin-left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav__link {
+    padding: 32px 30px 32px;
+    font-size: inherit;
+  }
+
+  .main-nav__link--no-text {
+    padding: 0;
+  }
+
+  .main-nav__link--cart {
+    padding-left: 82px;
+  }
+
+  .main-nav__list--additional {
+    border: none;
+    background-color: transparent;
+  }
+
+  .main-nav__list--additional .main-nav__item {
+    font-size: 15px;
+    border: none;
+  }
+
+  .main-nav__link--additional {
+    padding: 20px 30px;
   }
 
   .main-nav__delivery {
     display: block;
     grid-column: 3/4;
-    justify-self: self-end;
-    margin-right: 0;
-    padding-right: 50px;
+    background-color: transparent;
   }
 }

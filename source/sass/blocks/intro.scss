@@ -8,13 +8,13 @@
 
 .intro--index {
   background: url("../img/hero-mobile.jpg") no-repeat;
-  min-height: 506px;
+  min-height: 490px;
 }
 
 .intro__title {
   flex-grow: 1;
   display: block;
-  margin: 90px 30px 72px;
+  margin: 72px 30px;
   text-align: center;
 }
 
@@ -40,6 +40,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro--index {
+    position: relative;
+    top: -64px;
+    margin-bottom: -64px;
+  }
+
   .intro__list {
     display: flex;
     margin: 0 52px;
