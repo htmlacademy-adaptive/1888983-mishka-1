@@ -6,7 +6,7 @@
   min-height: 178px;
 }
 
-.intro--index {
+.intro__wrapper--index {
   background: url("../img/hero-mobile.jpg") no-repeat;
   min-height: 490px;
 }
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro--index {
+  .intro__wrapper {
     position: relative;
     top: -64px;
     margin-bottom: -64px;
