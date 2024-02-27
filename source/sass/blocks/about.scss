@@ -14,7 +14,6 @@
 .about__item {
   margin-bottom: 28px;
   line-height: 20px;
-  max-width: 325px;
   height: 100px;
 }
 
@@ -24,6 +23,12 @@
   align-items: center;
   width: auto;
   height: 38px;
+}
+
+@media (min-width: 321px) and (max-width: $mobile-width-only) {
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +44,7 @@
   .about__item {
     margin-right: auto;
     margin-bottom: 55px;
+    max-width: 325px;
   }
 
   .about__item:nth-child(3n) {

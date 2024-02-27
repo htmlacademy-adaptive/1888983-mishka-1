@@ -32,3 +32,10 @@
   width: 20px;
   height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

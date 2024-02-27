@@ -25,7 +25,7 @@
 
 .featured__attribute,
 .featured__value {
-  padding: 10px 0;
+  padding: 8px 0 12px;
   line-height: 20px;
 }
 
@@ -60,7 +60,7 @@
 @media (min-width: $tablet-width) {
   .featured {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 334px;
     grid-gap: 0 42px;
   }
 
@@ -70,14 +70,41 @@
     grid-column: 1/-1;
   }
 
+  .featured__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 38px;
+  }
+
   .featured__subtitle {
     width: 100px;
     text-align: center;
+    line-height: 17px;
+    margin: 6px 12px 10px;
+  }
+
+  .featured__description {
+    margin-bottom: 48px;
+  }
+
+  .featured__attribute,
+  .featured__value {
+    font-size: 15px;
+  }
+
+  .featured__list {
+    margin-bottom: 56px;
   }
 
   .featured__image {
     grid-column: 2/3;
     grid-row: 2/6;
+  }
+
+  .featured__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
   }
 }
 
