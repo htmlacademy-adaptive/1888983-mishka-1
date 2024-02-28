@@ -23,3 +23,17 @@
   font-size: 17px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .title--secondary {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--secondary {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
