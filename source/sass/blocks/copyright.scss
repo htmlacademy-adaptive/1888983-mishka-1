@@ -11,3 +11,12 @@
   line-height: 19px;
   color: #000000;
 }
+
+.copyright__link:hover svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}

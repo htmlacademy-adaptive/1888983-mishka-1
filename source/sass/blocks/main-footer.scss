@@ -10,6 +10,15 @@
   display: none;
 }
 
+.main-footer__logo:hover svg {
+  fill: #46c1ae;
+}
+
+.main-footer__logo:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .main-footer__social {
   padding: 28px 0;
 }
