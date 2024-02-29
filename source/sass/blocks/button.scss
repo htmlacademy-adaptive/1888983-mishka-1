@@ -19,6 +19,16 @@
   padding: 14px 38px;
   width: 100%;
   border: 2px solid #444444;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {
@@ -26,16 +36,24 @@
   width: 100%;
   background-color: #63d1bb;
   color: #ffffff;
-}
 
-.button--cart {
-  width: 20px;
-  height: 20px;
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     font-size: 17px;
     line-height: 20px;
+  }
+
+  .button--secondary {
+    line-height: 16px;
   }
 }

@@ -28,13 +28,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .main-footer__wrapper {
     padding: 50px 50px 58px;
   }
 

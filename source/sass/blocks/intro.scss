@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 0;
   min-height: 178px;
+  background: #f1f1f1;
 }
 
 .intro--index {
@@ -10,7 +11,7 @@
 }
 
 .intro__wrapper {
-  background: #f1f1f1 url("../img/hero-mobile.jpg") no-repeat 0 -17px;
+  background: url("../img/hero-mobile.jpg") no-repeat 0 -17px;
 }
 
 .intro__title {
@@ -80,7 +81,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .intro__wrapper {
+  .intro {
     position: relative;
     top: -88px;
     margin-bottom: -88px;
@@ -110,7 +111,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .intro__wrapper {
+  .intro {
     top: -64px;
     margin-bottom: -64px;
   }
