@@ -40,12 +40,6 @@
   background-color: #56c3b2;
 }
 
-.intro__list__link::after {
-  content: "";
-  position: absolute;
-  opacity: 0.5;
-}
-
 .intro__list__link {
   @include link;
   position: relative;
@@ -61,6 +55,12 @@
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.intro__list__link::after {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
 }
 
 .intro__list__link--interior::after {
@@ -82,14 +82,17 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    position: relative;
-    top: -88px;
-    margin-bottom: -88px;
+    min-height: 238px;
+  }
+
+  .intro--index {
+    margin-bottom: -24px;
   }
 
   .intro__title {
     font-size: 43px;
     line-height: 50px;
+    margin: 100px 175px 86px;
   }
 
   .intro__list {
@@ -104,6 +107,16 @@
     }
   }
 
+  .intro__list__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 34px;
+
+    &::after {
+      top: 30px;
+    }
+  }
+
   .intro__title--index {
     font-size: 47px;
     margin: 154px 52px 372px;
@@ -112,12 +125,25 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    top: -64px;
-    margin-bottom: -64px;
+    min-height: 272px;
+  }
+
+  .intro--index {
+    margin-bottom: -14px;
+  }
+
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 102px auto 112px;
   }
 
   .intro__list {
     margin: 0 50px;
+  }
+
+  .intro__list__link {
+    padding-right: 310px;
   }
 
   .intro__title--index {

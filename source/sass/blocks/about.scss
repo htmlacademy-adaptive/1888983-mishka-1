@@ -32,11 +32,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .about {
-    padding-right: 58px;
-    margin-bottom: 82px;
-  }
-
   .about__list {
     display: flex;
     flex-direction: column;
@@ -73,11 +68,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about {
-    padding: 0 250px 0 225px;
-    margin-bottom: 90px;
-  }
-
   .about__title {
     margin-bottom: 40px;
   }

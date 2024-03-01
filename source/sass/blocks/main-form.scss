@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.main-form__wrapper--grey {
+  background-color: #f1f1f1;
+}
+
 .main-form__text {
   margin: 0;
   margin-bottom: 30px;
@@ -10,12 +14,16 @@
 }
 
 .main-form__form {
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 }
 
 .main-form__filter {
   padding: 0 30px;
   margin-bottom: 30px;
+}
+
+.main-form__filter--add {
+  margin-bottom: 16px;
 }
 
 .main-form__title {
@@ -29,6 +37,15 @@
 
 .main-form__item {
   margin-bottom: 20px;
+}
+
+.main-form__item--radio {
+  margin-bottom: 10px;
+}
+
+.main-form__item--radio:last-child,
+.main-form__item--field:last-child {
+  margin-bottom: 0;
 }
 
 .main-form__control {
@@ -48,7 +65,6 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 142px;
-  margin-bottom: 6px;
   padding: 17px;
   border: 2px solid #000000;
   font-family: $font;
@@ -75,8 +91,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-form--header {
-    margin-bottom: 10px;
+  .main-form__header {
+    margin-bottom: 12px;
   }
 
   .main-form__text {
@@ -91,8 +107,12 @@
     margin-bottom: 0;
   }
 
-  .main-form__filter--grey {
-    background-color: #f1f1f1;
+  .main-form__filter--color {
+    padding: 56px 50px 20px;
+  }
+
+  .main-form__filter--name {
+    padding: 56px 50px 50px;
   }
 
   .main-form__title {
@@ -129,6 +149,11 @@
     display: flex;
     margin-right: auto;
     font-size: 19px;
+    margin-bottom: 24px;
+  }
+
+  .main-form__item--radio {
+    margin-bottom: 24px;
   }
 
   .main-form__list--contacts {
@@ -138,29 +163,45 @@
   .main-form__wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
+  }
+
+  .main-form__description {
+    font-size: 19px;
   }
 
   .main-form__note {
     order: 2;
     margin-bottom: 0;
     font-size: 17px;
+    line-height: 30px;
   }
 
   .main-form__button {
     width: 230px;
-    padding: 18px 30px;
+    padding: 16px 30px;
     font-size: 17px;
     margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-form--header {
+  .main-form__header {
     padding: 0 225px;
+    max-width: 700px;
   }
 
   .main-form__filter {
     padding: 50px 225px 50px 100px;
+    max-width: 825px;
+  }
+
+  .main-form__filter--color {
+    padding: 42px 225px 58px 100px;
+  }
+
+  .main-form__filter--name {
+    padding: 44px 225px 50px 100px;
   }
 
   .main-form__title {

@@ -4,8 +4,9 @@
 }
 
 .form-field__field {
+  position: relative;
   flex-grow: 1;
-  padding: 16px 0;
+  padding: 16px 0 18px;
   border: none;
   border-bottom: 2px solid #000000;
   font-family: $font;
@@ -14,6 +15,16 @@
   line-height: 18px;
   color: #000000;
   background-color: inherit;
+}
+
+.form-field__field--tel {
+  padding-right: 40px;
+  background: url("../img/phone.svg") no-repeat right 7px top 11px;
+}
+
+.form-field__field--email {
+  padding-right: 40px;
+  background: url("../img/mail.svg") no-repeat right 3px top 16px;
 }
 
 .form-field__field::placeholder {
@@ -28,7 +39,35 @@
     flex-grow: 1;
   }
 
+  .form-field__field {
+    padding: 16px 18px 18px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form-field__field--tel {
+    padding: 14px 60px 20px 18px;
+    background: url("../img/phone.svg") no-repeat right 26px top 11px;
+  }
+
+  .form-field__field--email {
+    padding: 14px 60px 20px 18px;
+    background: url("../img/mail.svg") no-repeat right 22px top 16px;
+  }
+
   .form-field__title {
     margin-right: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field__field--tel {
+    padding-right: 40px;
+    background: url("../img/phone.svg") no-repeat right 8px top 11px;
+  }
+
+  .form-field__field--email {
+    padding-right: 40px;
+    background: url("../img/mail.svg") no-repeat right 4px top 16px;
   }
 }

@@ -20,4 +20,62 @@
     padding: 0 50px;
     margin-bottom: 40px;
   }
+
+  .main-container__intro {
+    position: relative;
+    top: -64px;
+    margin-bottom: -10px;
+  }
+
+  .main-container__intro--form {
+    margin-bottom: -10px;
+  }
+
+  .main-container__featured {
+    padding-bottom: 52px;
+    margin-bottom: 70px;
+  }
+
+  .main-container__about {
+    padding-right: 58px;
+    margin-bottom: 82px;
+  }
+
+  .main-container__reviews {
+    padding-left: 0;
+    padding-bottom: 68px;
+    margin-bottom: 46px;
+  }
+
+  .main-container__contacts {
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__intro {
+    top: -64px;
+    margin-bottom: 36px;
+  }
+
+  .main-container__featured {
+    padding-left: 225px;
+    padding-bottom: 72px;
+    margin-bottom: 68px;
+  }
+
+  .main-container__about {
+    padding: 0 250px 0 225px;
+    margin-bottom: 90px;
+  }
+
+  .main-container__reviews {
+    padding-left: 50px;
+    margin-bottom: 70px;
+  }
+
+  .main-container__contacts {
+    padding: 0 50px;
+    margin-bottom: 104px;
+  }
 }

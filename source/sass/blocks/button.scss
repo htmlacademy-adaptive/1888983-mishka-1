@@ -16,7 +16,7 @@
 }
 
 .button--primary {
-  padding: 14px 38px;
+  padding: 16px 38px;
   width: 100%;
   border: 2px solid #444444;
 
@@ -50,10 +50,9 @@
 @media (min-width: $tablet-width) {
   .button {
     font-size: 17px;
-    line-height: 20px;
   }
 
-  .button--secondary {
-    line-height: 16px;
+  .button--index {
+    line-height: 20px;
   }
 }
