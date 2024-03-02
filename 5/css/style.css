@@ -1927,6 +1927,10 @@
     margin-bottom: 0;
   }
 }
+.catalog-item:hover .catalog-item__wrapper {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
 .catalog-item__link {
   text-decoration: none;
   color: #000000;
@@ -2024,6 +2028,9 @@
 .making {
   display: flex;
   flex-direction: column;
+}
+.making:hover .making__wrapper {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .making__wrapper {
