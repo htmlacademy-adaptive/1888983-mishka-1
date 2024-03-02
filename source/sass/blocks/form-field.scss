@@ -1,10 +1,10 @@
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .form-field__field {
-  position: relative;
   flex-grow: 1;
   padding: 16px 0 18px;
   border: none;
@@ -15,16 +15,39 @@
   line-height: 18px;
   color: #000000;
   background-color: inherit;
+
+  &:hover,
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:not(:placeholder-shown) {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
-.form-field__field--tel {
-  padding-right: 40px;
-  background: url("../img/phone.svg") no-repeat right 7px top 11px;
-}
-
+.form-field__field--tel,
 .form-field__field--email {
   padding-right: 40px;
-  background: url("../img/mail.svg") no-repeat right 3px top 16px;
+}
+
+.form-field__field--tel + .form-field__icon {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+}
+
+.form-field__field--email + .form-field__icon {
+  position: absolute;
+  top: 16px;
+  right: 3px;
+}
+
+.form-field__field:hover + .form-field__icon,
+.form-field__field:active + .form-field__icon,
+.form-field__field:not(:placeholder-shown) + .form-field__icon {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .form-field__field::placeholder {
@@ -45,14 +68,17 @@
     line-height: 18px;
   }
 
-  .form-field__field--tel {
-    padding: 14px 60px 20px 18px;
-    background: url("../img/phone.svg") no-repeat right 26px top 11px;
-  }
-
+  .form-field__field--tel,
   .form-field__field--email {
     padding: 14px 60px 20px 18px;
-    background: url("../img/mail.svg") no-repeat right 22px top 16px;
+  }
+
+  .form-field__field--tel + .form-field__icon {
+    right: 26px;
+  }
+
+  .form-field__field--email + .form-field__icon {
+    right: 22px;
   }
 
   .form-field__title {
@@ -61,13 +87,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-field__field--tel {
-    padding-right: 40px;
-    background: url("../img/phone.svg") no-repeat right 8px top 11px;
-  }
-
+  .form-field__field--tel,
   .form-field__field--email {
     padding-right: 40px;
-    background: url("../img/mail.svg") no-repeat right 4px top 16px;
+  }
+
+  .form-field__field--tel + .form-field__icon {
+    right: 8px;
+  }
+
+  .form-field__field--email + .form-field__icon {
+    right: 4px;
   }
 }
