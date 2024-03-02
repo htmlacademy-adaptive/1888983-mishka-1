@@ -1,7 +1,7 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let modal = document.querySelector('.modal');
-let modalToggle = document.querySelector('.featured__button');
+let modalToggle = document.querySelector('.button--modal');
 let modalOverlay = document.querySelector('.modal__overlay');
 let page = document.querySelector('.page__body');
 

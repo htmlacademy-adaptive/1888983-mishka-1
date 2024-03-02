@@ -11,6 +11,14 @@
   padding: 0 30px;
 }
 
+.main-container__making {
+  margin-bottom: 58px;
+}
+
+.main-container__contacts {
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .main-container__wrapper {
     padding: 0 50px;
@@ -44,7 +52,16 @@
   }
 
   .main-container__contacts {
+    padding: 0;
     margin-bottom: 56px;
+  }
+
+  .main-container__catalog {
+    margin-bottom: 54px;
+  }
+
+  .main-container__making {
+    margin-bottom: 64px;
   }
 }
 
@@ -72,6 +89,14 @@
 
   .main-container__contacts {
     padding: 0 50px;
+    margin-bottom: 104px;
+  }
+
+  .main-container__catalog {
+    margin-bottom: 56px;
+  }
+
+  .main-container__making {
     margin-bottom: 104px;
   }
 }

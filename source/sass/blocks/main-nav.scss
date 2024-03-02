@@ -64,12 +64,16 @@
   background-color: #ffffff;
   border-top: 1px solid #ececec;
   line-height: 24px;
+
+  &:last-child {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .main-nav__link {
   @include link;
   display: block;
-  padding: 28px 30px 28px 76px;
+  padding: 28px 30px 26px 76px;
 }
 
 .main-nav__text {
@@ -124,7 +128,7 @@
   }
 
   .main-nav--is-open .main-nav__list--user {
-    top: 240px;
+    top: 238px;
     /* Мне не нравится этот вариант, потому что он не работает с переполнением.*/
   }
 
@@ -166,16 +170,17 @@
 
   .main-nav__list--user {
     grid-column: 2/3;
-  }
-
-  .main-nav__list--user .main-nav__item:last-child {
-    flex-grow: 1;
+    justify-content: flex-end;
   }
 
   .main-nav__item {
     border-top: none;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     min-width: 82px;
+  }
+
+  .main-nav__item:last-child {
+    border-bottom: none;
   }
 
   .main-nav__list--site .main-nav__item {
@@ -228,12 +233,6 @@
     margin-right: 0;
     padding-right: 50px;
     font-size: 15px;
-  }
-}
-
-@media (min-width: $tablet-width-only) {
-  .main-nav {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
