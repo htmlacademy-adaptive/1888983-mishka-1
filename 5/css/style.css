@@ -151,11 +151,17 @@
   }
 }
 .main-nav__wrapper {
+  box-sizing: border-box;
   display: flex;
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__logo {
-  margin: 22px auto 22px 116px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .main-nav__logo:hover {
   opacity: 0.6;
@@ -171,8 +177,9 @@
 .main-nav__toggle {
   position: relative;
   width: 80px;
-  height: 80px;
+  height: 79px;
   padding: 20px;
+  margin-left: auto;
 }
 .main-nav__toggle:hover {
   opacity: 0.6;
@@ -202,6 +209,11 @@
   background-image: url("../img/menu-close.svg");
 }
 
+.main-nav__menu {
+  width: 100%;
+  min-width: 320px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -218,19 +230,12 @@
   justify-self: end;
 }
 
-.main-nav__list:last-child {
-  border-bottom: 1px solid #ececec;
-}
-
 .main-nav__item {
   position: relative;
   box-sizing: border-box;
   background-color: #ffffff;
-  border-top: 1px solid #ececec;
-  line-height: 24px;
-}
-.main-nav__item:last-child {
   border-bottom: 1px solid #ececec;
+  line-height: 24px;
 }
 
 .main-nav__link {
@@ -283,17 +288,12 @@
     display: none;
   }
 
-  .main-nav--is-open .main-nav__list {
+  .main-nav--is-open .main-nav__menu {
     position: absolute;
     top: 80px;
     left: 0;
     min-height: 158px;
     z-index: 10;
-  }
-
-  .main-nav--is-open .main-nav__list--user {
-    top: 238px;
-    /* Мне не нравится этот вариант, потому что он не работает с переполнением.*/
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -305,24 +305,24 @@
   }
 }
 @media (min-width: 768px) {
-  .main-nav {
+  .main-nav__menu {
     display: grid;
     grid-template-columns: 372px 1fr;
     align-items: center;
   }
 
-  .main-nav__wrapper {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
   .main-nav__logo {
-    margin: 22px auto 20px 48px;
+    position: absolute;
+    top: 22px;
+    left: 50px;
+    transform: none;
     width: 113px;
     height: 46px;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -332,12 +332,13 @@
   }
 
   .main-nav__list--user {
-    grid-column: 2/3;
+    grid-column: 1/-1;
     justify-content: flex-end;
+    padding-left: 150px;
   }
 
   .main-nav__item {
-    border-top: none;
+    border-bottom: none;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     min-width: 82px;
   }
@@ -351,7 +352,7 @@
     background-color: transparent;
   }
   .main-nav__list--site .main-nav__item:first-child {
-    margin-left: 36px;
+    margin-left: 32px;
   }
 
   .main-nav__link {
@@ -398,18 +399,16 @@
   }
 }
 @media (min-width: 1150px) {
-  .main-nav {
+  .main-nav__menu {
     display: grid;
-    grid-template-columns: 500px min-content auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  .main-nav__wrapper {
-    grid-column: 2/3;
-  }
-
   .main-nav__logo {
-    margin: 8px auto;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 149px;
     height: 72px;
   }
@@ -422,13 +421,13 @@
   .main-nav__list--site {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding-left: 20px;
+    padding: 0 80px 0 20px;
   }
 
   .main-nav__list--user {
-    grid-column: 3/4;
+    grid-column: 2/3;
     justify-content: end;
-    padding-right: 20px;
+    padding: 0 20px 0 80px;
   }
 
   .main-nav__list--user .main-nav__item:last-child {
@@ -465,12 +464,13 @@
   }
 
   .main-nav__link--additional {
-    padding: 20px 26px;
+    padding: 20px 30px 20px 26px;
   }
 
   .main-nav__delivery {
     display: block;
-    grid-column: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
     background-color: transparent;
   }
 }
@@ -483,11 +483,13 @@
   margin: 0 auto;
 }
 
-/*Пока что ограничил максимальную ширину, потому что на нативном разрешении монитора,
-которое выше 1150px, выглядит кошмарно.*/
 .main-container__wrapper {
   margin-bottom: 30px;
   padding: 0 30px;
+}
+
+.main-container__intro {
+  margin-bottom: 30px;
 }
 
 .main-container__making {
@@ -505,13 +507,12 @@
   }
 
   .main-container__intro {
-    position: relative;
-    top: -64px;
-    margin-bottom: -10px;
+    margin-top: -64px;
+    margin-bottom: 66px;
   }
 
   .main-container__intro--form {
-    margin-bottom: -10px;
+    margin-bottom: 54px;
   }
 
   .main-container__featured {
@@ -545,8 +546,11 @@
 }
 @media (min-width: 1150px) {
   .main-container__intro {
-    top: -64px;
-    margin-bottom: 36px;
+    margin-bottom: 110px;
+  }
+
+  .main-container__intro--form {
+    margin-bottom: 98px;
   }
 
   .main-container__featured {
@@ -575,23 +579,28 @@
   }
 
   .main-container__making {
-    margin-bottom: 104px;
+    padding: 0;
+    margin: 0 auto 104px;
   }
 }
 .intro {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
   min-height: 178px;
   background: #f1f1f1;
 }
 
 .intro--index {
   min-height: 486px;
+  background: #f8f8f8;
+  margin-bottom: 36px;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__wrapper {
-  background: url("../img/hero-mobile.jpg") no-repeat 0 -17px;
+  background: url("../img/hero-mobile.jpg") no-repeat center top -17px;
 }
 
 .intro__title {
@@ -668,7 +677,7 @@
   }
 
   .intro--index {
-    margin-bottom: -24px;
+    margin-bottom: 40px;
   }
 
   .intro__title {
@@ -706,7 +715,7 @@
   }
 
   .intro--index {
-    margin-bottom: -14px;
+    margin-bottom: 54px;
   }
 
   .intro__title {
@@ -727,6 +736,10 @@
     margin: 158px 225px 354px;
   }
 }
+.featured {
+  box-sizing: border-box;
+}
+
 .featured__title {
   margin-bottom: 4px;
 }
@@ -880,6 +893,7 @@
   }
 }
 .about {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -944,11 +958,6 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 769px) {
-  .about__list {
-    align-content: space-around;
-  }
-}
 @media (min-width: 1150px) {
   .about__title {
     margin-bottom: 40px;
@@ -962,6 +971,10 @@
     align-content: space-between;
   }
 }
+.reviews {
+  box-sizing: border-box;
+}
+
 .reviews__title {
   margin-bottom: 14px;
 }
@@ -1089,6 +1102,7 @@
   }
 }
 .contacts {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -1205,11 +1219,6 @@
     max-width: 230px;
     margin: 0 auto;
     font-size: 17px;
-  }
-}
-@media (min-width: 769px) {
-  .contacts__list {
-    justify-content: space-around;
   }
 }
 @media (min-width: 1150px) {
@@ -1944,6 +1953,8 @@
 
 .catalog-item__image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .catalog-item__wrapper {
@@ -2029,8 +2040,12 @@
   display: flex;
   flex-direction: column;
 }
-.making:hover .making__wrapper {
+.making:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.making__container {
+  margin: 0 50px;
 }
 
 .making__wrapper {
@@ -2063,6 +2078,9 @@
 
 .making__video-image {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .making__play-button {

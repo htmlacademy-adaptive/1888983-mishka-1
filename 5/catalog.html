@@ -65,12 +65,14 @@
       </nav>
     </header>
 
-    <main class="main-container">
-      <section class="main-container__wrapper main-container__intro intro">
-        <h1 class="intro__title title">Каталог товаров</h1>
+    <main>
+      <section class="main-container__intro intro">
+        <div class="main-container intro__container">
+          <h1 class="intro__title title">Каталог товаров</h1>
+        </div>
       </section>
 
-      <section class="main-container__wrapper main-container__catalog catalog">
+      <section class="main-container main-container__wrapper main-container__catalog catalog">
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
@@ -135,7 +137,8 @@
         </ul>
       </section>
 
-      <section class="main-container__wrapper main-container__making making">
+      <section class="main-container main-container__wrapper main-container__making">
+        <div class="making making__container">
         <div class="making__wrapper making__wrapper--title">
           <svg class="making__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
             <path d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z" fill="#63D1BB"/>
@@ -157,6 +160,7 @@
         <div class="making__wrapper making__wrapper--text">
           <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="making__button button button--primary" href="form.html">Сделать заказ</a>
+        </div>
         </div>
       </section>
     </main>
@@ -248,6 +252,6 @@
     </div>
 
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
