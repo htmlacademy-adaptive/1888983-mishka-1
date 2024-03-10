@@ -1,4 +1,5 @@
 .contacts {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -114,12 +115,6 @@
     max-width: 230px;
     margin: 0 auto;
     font-size: 17px;
-  }
-}
-
-@media (min-width: $tablet-width-only) {
-  .contacts__list {
-    justify-content: space-around;
   }
 }
 

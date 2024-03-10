@@ -1,4 +1,5 @@
 .about {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -58,12 +59,6 @@
 
   .about__item:nth-child(3n) {
     margin-bottom: 0;
-  }
-}
-
-@media (min-width: $tablet-width-only) {
-  .about__list {
-    align-content: space-around;
   }
 }
 

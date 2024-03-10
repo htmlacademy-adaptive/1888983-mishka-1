@@ -3,12 +3,13 @@
   margin: 0 auto;
 }
 
-/*Пока что ограничил максимальную ширину, потому что на нативном разрешении монитора,
-которое выше 1150px, выглядит кошмарно.*/
-
 .main-container__wrapper {
   margin-bottom: 30px;
   padding: 0 30px;
+}
+
+.main-container__intro {
+  margin-bottom: 30px;
 }
 
 .main-container__making {
@@ -26,13 +27,12 @@
   }
 
   .main-container__intro {
-    position: relative;
-    top: -64px;
-    margin-bottom: -10px;
+    margin-top: -64px;
+    margin-bottom: 66px;
   }
 
   .main-container__intro--form {
-    margin-bottom: -10px;
+    margin-bottom: 54px;
   }
 
   .main-container__featured {
@@ -67,9 +67,13 @@
 
 @media (min-width: $desktop-width) {
   .main-container__intro {
-    top: -64px;
-    margin-bottom: 36px;
+    margin-bottom: 110px;
   }
+
+  .main-container__intro--form {
+    margin-bottom: 98px;
+  }
+
 
   .main-container__featured {
     padding-left: 225px;
@@ -97,6 +101,7 @@
   }
 
   .main-container__making {
-    margin-bottom: 104px;
+    padding: 0;
+    margin: 0 auto 104px;
   }
 }

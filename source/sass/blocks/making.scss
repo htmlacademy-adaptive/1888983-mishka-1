@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
 
-  &:hover .making__wrapper {
+  &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
+}
+
+.making__container {
+  margin: 0 50px;
 }
 
 .making__wrapper {
@@ -37,6 +41,9 @@
 
 .making__video-image {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .making__play-button {

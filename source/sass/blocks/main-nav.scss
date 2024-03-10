@@ -1,11 +1,14 @@
 .main-nav__wrapper {
+  box-sizing: border-box;
   display: flex;
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__logo {
   @include hover-opacity;
   @include active-opacity;
-  margin: 22px auto 22px 116px;
+  @include center;
 }
 
 .main-nav__logo-image {
@@ -17,8 +20,9 @@
   @include active-opacity;
   position: relative;
   width: 80px;
-  height: 80px;
+  height: 79px;
   padding: 20px;
+  margin-left: auto;
 }
 
 .main-nav--is-closed .main-nav__toggle::before {
@@ -42,6 +46,11 @@
   background-image: url("../img/menu-close.svg");
 }
 
+.main-nav__menu {
+  width: 100%;
+  min-width: 320px;
+}
+
 .main-nav__list {
   @include list;
   box-sizing: border-box;
@@ -54,20 +63,12 @@
   justify-self: end;
 }
 
-.main-nav__list:last-child {
-  border-bottom: 1px solid #ececec;
-}
-
 .main-nav__item {
   position: relative;
   box-sizing: border-box;
   background-color: #ffffff;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   line-height: 24px;
-
-  &:last-child {
-    border-bottom: 1px solid #ececec;
-  }
 }
 
 .main-nav__link {
@@ -119,17 +120,12 @@
     display: none;
   }
 
-  .main-nav--is-open .main-nav__list {
+  .main-nav--is-open .main-nav__menu {
     position: absolute;
     top: 80px;
     left: 0;
     min-height: 158px;
     z-index: 10;
-  }
-
-  .main-nav--is-open .main-nav__list--user {
-    top: 238px;
-    /* Мне не нравится этот вариант, потому что он не работает с переполнением.*/
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -142,24 +138,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
+  .main-nav__menu {
     display: grid;
     grid-template-columns: 372px 1fr;
     align-items: center;
   }
 
-  .main-nav__wrapper {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
   .main-nav__logo {
-    margin: 22px auto 20px 48px;
+    position: absolute;
+    top: 22px;
+    left: 50px;
+    transform: none;
     width: 113px;
     height: 46px;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -169,12 +165,13 @@
   }
 
   .main-nav__list--user {
-    grid-column: 2/3;
+    grid-column: 1/-1;
     justify-content: flex-end;
+    padding-left: 150px;
   }
 
   .main-nav__item {
-    border-top: none;
+    border-bottom: none;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     min-width: 82px;
   }
@@ -188,7 +185,7 @@
     background-color: transparent;
 
     &:first-child {
-      margin-left: 36px;
+      margin-left: 32px;
     }
   }
 
@@ -237,18 +234,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
+  .main-nav__menu {
     display: grid;
-    grid-template-columns: 500px min-content auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  .main-nav__wrapper {
-    grid-column: 2/3;
-  }
-
   .main-nav__logo {
-    margin: 8px auto;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 149px;
     height: 72px;
   }
@@ -261,13 +256,13 @@
   .main-nav__list--site {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding-left: 20px;
+    padding: 0 80px 0 20px;
   }
 
   .main-nav__list--user {
-    grid-column: 3/4;
+    grid-column: 2/3;
     justify-content: end;
-    padding-right: 20px;
+    padding: 0 20px 0 80px;
   }
 
   .main-nav__list--user .main-nav__item:last-child {
@@ -304,12 +299,13 @@
   }
 
   .main-nav__link--additional {
-    padding: 20px 26px;
+    padding: 20px 30px 20px 26px;
   }
 
   .main-nav__delivery {
     display: block;
-    grid-column: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
     background-color: transparent;
   }
 }
