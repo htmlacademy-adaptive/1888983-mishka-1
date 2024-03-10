@@ -9,6 +9,7 @@
   @include hover-opacity;
   @include active-opacity;
   @include center;
+  z-index: 5;
 }
 
 .main-nav__logo-image {
