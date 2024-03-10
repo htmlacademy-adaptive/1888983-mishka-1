@@ -308,6 +308,10 @@
   }
 }
 @media (min-width: 768px) {
+  .main-nav__wrapper {
+    min-height: 0;
+  }
+
   .main-nav__menu {
     display: grid;
     grid-template-columns: 372px 1fr;
