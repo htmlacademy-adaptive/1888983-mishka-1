@@ -17,3 +17,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin hover-opacity {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@mixin active-opacity {
+  &:active {
+    opacity: 0.3;
+  }
+}

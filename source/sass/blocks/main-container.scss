@@ -3,20 +3,105 @@
   margin: 0 auto;
 }
 
-/*Пока что ограничил максимальную ширину, потому что на нативном разрешении монитора,
-которое выше 1150px, выглядит кошмарно.*/
-
 .main-container__wrapper {
   margin-bottom: 30px;
   padding: 0 30px;
 }
 
-.main-container__wrapper--grey {
-  background-color: #f1f1f1;
+.main-container__intro {
+  margin-bottom: 30px;
+}
+
+.main-container__making {
+  margin-bottom: 58px;
+}
+
+.main-container__contacts {
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-container__wrapper {
     padding: 0 50px;
+    margin-bottom: 40px;
+  }
+
+  .main-container__intro {
+    margin-top: -64px;
+    margin-bottom: 66px;
+  }
+
+  .main-container__intro--form {
+    margin-bottom: 54px;
+  }
+
+  .main-container__featured {
+    padding-bottom: 52px;
+    margin-bottom: 70px;
+  }
+
+  .main-container__about {
+    padding-right: 58px;
+    margin-bottom: 82px;
+  }
+
+  .main-container__reviews {
+    padding-left: 0;
+    padding-bottom: 68px;
+    margin-bottom: 46px;
+  }
+
+  .main-container__contacts {
+    padding: 0;
+    margin-bottom: 56px;
+  }
+
+  .main-container__catalog {
+    margin-bottom: 54px;
+  }
+
+  .main-container__making {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__intro {
+    margin-bottom: 110px;
+  }
+
+  .main-container__intro--form {
+    margin-bottom: 98px;
+  }
+
+
+  .main-container__featured {
+    padding-left: 225px;
+    padding-bottom: 72px;
+    margin-bottom: 68px;
+  }
+
+  .main-container__about {
+    padding: 0 250px 0 225px;
+    margin-bottom: 90px;
+  }
+
+  .main-container__reviews {
+    padding-left: 50px;
+    margin-bottom: 70px;
+  }
+
+  .main-container__contacts {
+    padding: 0 50px;
+    margin-bottom: 104px;
+  }
+
+  .main-container__catalog {
+    margin-bottom: 56px;
+  }
+
+  .main-container__making {
+    padding: 0;
+    margin: 0 auto 104px;
   }
 }

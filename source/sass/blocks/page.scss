@@ -14,3 +14,14 @@
   background-color: #ffffff;
   color: #444444;
 }
+
+.page__body--no-overflow {
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

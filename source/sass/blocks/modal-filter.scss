@@ -28,6 +28,10 @@
   border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
+.modal-filter__mark:hover {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
 .modal-filter__control-input:checked + .modal-filter__mark {
   border-color: #63d1bb;
 }

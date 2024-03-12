@@ -1,21 +1,33 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  background-color: #f1f1f1;
   min-height: 178px;
+  background: #f1f1f1;
 }
 
 .intro--index {
-  background: url("../img/hero-mobile.jpg") no-repeat;
-  min-height: 506px;
+  min-height: 486px;
+  background: #f8f8f8;
+  margin-bottom: 36px;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__wrapper {
+  background: url("../img/hero-mobile.jpg") no-repeat center top -17px;
 }
 
 .intro__title {
   flex-grow: 1;
   display: block;
-  margin: 90px 30px 72px;
+  margin: 72px 30px;
   text-align: center;
+}
+
+.intro__title--index {
+  min-height: 90px;
+  margin-bottom: 120px;
 }
 
 .intro__list {
@@ -23,6 +35,7 @@
 }
 
 .intro__list__item {
+  min-height: 102px;
   width: 100%;
   background-color: #63d1bb;
 }
@@ -33,29 +46,111 @@
 
 .intro__list__link {
   @include link;
+  position: relative;
   display: block;
   padding: 24px 160px 30px 30px;
   font-size: 20px;
   color: #ffffff;
-}
 
-@media (min-width: $tablet-width) {
-  .intro__list {
-    display: flex;
-    margin: 0 52px;
+  &:hover::after {
+    opacity: 0.7;
   }
 
-  .intro-title--index {
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.intro__list__link::after {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+}
+
+.intro__list__link--interior::after {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background: url("../img/icon-interior.svg") no-repeat;
+}
+
+.intro__list__link--toys::after {
+  top: 21px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-toys.svg") no-repeat;
+}
+
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 238px;
+  }
+
+  .intro--index {
+    margin-bottom: 40px;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 100px 175px 86px;
+  }
+
+  .intro__list {
+    display: flex;
+    margin: 0 50px;
+  }
+
+  .intro__list__item {
+    &:hover,
+    &:active {
+      transform: translateY(-5px);
+    }
+  }
+
+  .intro__list__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 34px;
+
+    &::after {
+      top: 30px;
+    }
+  }
+
+  .intro__title--index {
+    font-size: 47px;
     margin: 154px 52px 372px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    min-height: 272px;
+  }
+
+  .intro--index {
+    margin-bottom: 54px;
+  }
+
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 102px auto 112px;
+  }
+
   .intro__list {
     margin: 0 50px;
   }
 
-  .intro-title--index {
+  .intro__list__link {
+    padding-right: 310px;
+  }
+
+  .intro__title--index {
     margin: 158px 225px 354px;
   }
 }

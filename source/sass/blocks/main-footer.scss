@@ -3,11 +3,21 @@
 }
 
 .main-footer__wrapper {
+  max-width: 1050px;
   padding: 0 30px;
 }
 
 .main-footer__logo {
   display: none;
+}
+
+.main-footer__logo:hover svg {
+  fill: #46c1ae;
+}
+
+.main-footer__logo:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 .main-footer__social {
@@ -19,13 +29,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .main-footer__wrapper {
     padding: 50px 50px 58px;
   }
 
