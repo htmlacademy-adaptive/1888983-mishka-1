@@ -41,6 +41,8 @@
 .featured__image {
   display: block;
   margin-bottom: 26px;
+  width: 100%;
+  height: auto;
 }
 
 .featured__price {
@@ -54,6 +56,7 @@
 
 .featured__button {
   margin-bottom: 36px;
+  padding: 14px 38px;
 }
 
 
@@ -82,7 +85,7 @@
   }
 
   .featured__description {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
 
   .featured__item {
@@ -93,9 +96,12 @@
     margin-bottom: 56px;
   }
 
-  .featured__image {
+  .featured__image-wrapper {
     grid-column: 2/3;
     grid-row: 2/6;
+  }
+
+  .featured__image {
     margin: 0;
   }
 
@@ -152,7 +158,7 @@
     margin-bottom: 108px;
   }
 
-  .featured__image {
+  .featured__image-wrapper {
     grid-column: 2/3;
     grid-row: 1/6;
   }

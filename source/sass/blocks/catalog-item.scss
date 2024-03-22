@@ -72,7 +72,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .catalog-item__wrapper {
@@ -100,5 +101,6 @@
 
   .catalog-item__wrapper {
     min-height: 196px;
+    padding: 26px 28px;
   }
 }
