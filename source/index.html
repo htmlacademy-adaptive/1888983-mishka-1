@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
   </head>
 
   <body class="page__body">
@@ -13,7 +16,11 @@
       <nav class="main-nav main-nav--is-closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo logo" href="">
-            <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+            </picture>
           </a>
           <button class="main-nav__toggle button" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
@@ -104,7 +111,13 @@
             <dd class="featured__value">15 см</dd>
           </div>
         </dl>
-        <img class="featured__image" src="img/knitted-basket-mobile.jpg" width="260" height="315" alt="Фотография вязаных корзинок.">
+        <div class="featured__image-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/knitted-basket-desktop.jpg 1x, img/knitted-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/knitted-basket-tablet.jpg 1x, img/knitted-basket-tablet@2x.jpg 2x">
+            <img class="featured__image" src="img/knitted-basket-mobile.jpg" width="260" height="315" srcset="img/knitted-basket-mobile@2x.jpg 2x" alt="Фотография вязаных корзинок.">
+          </picture>
+        </div>
         <p class="featured__price">Цена: 990 руб.</p>
         <button class="featured__button button button--primary button--index button--modal" type="button">Заказать</button>
       </section>

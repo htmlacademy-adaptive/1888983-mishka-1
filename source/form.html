@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
   </head>
   <body class="page__body">
 
@@ -12,7 +15,11 @@
       <nav class="main-nav main-nav--is-closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo logo" href="index.html">
-            <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+            </picture>
           </a>
           <button class="main-nav__toggle button" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
