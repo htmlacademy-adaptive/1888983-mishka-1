@@ -1,6 +1,18 @@
 .intro {
+  position: relative;
   min-height: 178px;
   background: #f1f1f1;
+}
+
+.intro::after {
+  display: none;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 24px;
+  background: url("../img/zigzag-fill.svg");
 }
 
 .intro--index {
@@ -94,6 +106,10 @@
     min-height: 238px;
   }
 
+  .intro::after {
+    display: block;
+  }
+
   .intro--index {
     margin-bottom: 40px;
   }
@@ -119,6 +135,8 @@
   }
 
   .intro__list__item {
+    min-height: 118px;
+
     &:hover,
     &:active {
       transform: translateY(-5px);
@@ -144,6 +162,12 @@
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 272px;
+  }
+
+  .intro::after {
+    min-width: 1250px;
+    height: 34px;
+    background: url("../img/zigzag-fill-desktop.svg");
   }
 
   .intro--index {
