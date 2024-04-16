@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -85,6 +85,9 @@
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="img/rabbit-desktop.webp 1x, img/rabbit-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/rabbit-tablet.webp 1x, img/rabbit-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/rabbit-tablet.webp 1x, img/rabbit-tablet@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
                 <img class="catalog-item__image" src="img/rabbit-mobile.jpg" srcset="img/rabbit-mobile@2x.jpg 2x" width="260" height="195" alt="">
@@ -136,6 +139,9 @@
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="img/big-toy-basket-desktop.webp 1x, img/big-toy-basket-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/big-toy-basket-tablet.webp 1x, img/big-toy-basket-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/big-toy-basket-tablet.webp 1x, img/big-toy-basket-tablet@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/big-toy-basket-desktop.jpg 1x, img/big-toy-basket-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/big-toy-basket-tablet.jpg 1x, img/big-toy-basket-tablet@2x.jpg 2x">
                 <img class="catalog-item__image" src="img/big-toy-basket-mobile.jpg" srcset="img/big-toy-basket-mobile@2x.jpg 2x" width="260" height="195" alt="">
@@ -169,7 +175,10 @@
             <h2 class="making__title title title--catalog">Процесс производства</h2>
           </div>
           <div class="making__video">
-            <img class="making__video-image" src="img/video.jpg" srcset="img/video@2x.jpg 2x" width="260" height="150" alt="Обложка ролика о произведстве корзинок.">
+            <picture>
+              <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+              <img class="making__video-image" src="img/video.jpg" srcset="img/video@2x.jpg 2x" width="260" height="150" alt="Обложка ролика о произведстве корзинок.">
+            </picture>
             <button class="making__play-button button" type="button">
               <svg width="101" height="77" fill="none">
                 <use href="img/sprite.svg#play-button"></use>

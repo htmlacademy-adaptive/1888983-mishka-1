@@ -8,13 +8,8 @@ let page = document.querySelector('.page__body');
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--is-closed')) {
-    navMain.classList.remove('main-nav--is-closed');
-    navMain.classList.add('main-nav--is-open');
-  } else {
-    navMain.classList.add('main-nav--is-closed');
-    navMain.classList.remove('main-nav--is-open');
-  }
+  navMain.classList.toggle('main-nav--is-closed');
+  navMain.classList.toggle('main-nav--is-open')
 });
 
 modalToggle.addEventListener('click', function () {
