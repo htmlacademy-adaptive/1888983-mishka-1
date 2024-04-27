@@ -49,9 +49,10 @@
 }
 
 .about__image--rocket {
-  padding-top: 1px;
+  height: 23px;
+  padding-top: 8px;
   margin-left: -6px;
-  margin-bottom: 19px;
+  margin-bottom: 27px;
 }
 
 .about__image--gift {
@@ -82,7 +83,7 @@
   }
 
   .about__image {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .about__item {
@@ -93,6 +94,30 @@
 
   .about__item:nth-child(3n) {
     margin-bottom: 0;
+  }
+
+  .about__image--ecology {
+    margin-bottom: 18px;
+  }
+
+  .about__image--thread {
+    padding-top: 1px;
+    padding-left: 2px;
+    margin-bottom: 18px;
+  }
+
+  .about__image--bill {
+    margin-bottom: 27px;
+  }
+
+  .about__image--rocket {
+    padding-top: 5px;
+    margin-bottom: 28px;
+  }
+
+  .about__image--gift {
+    padding-top: 1px;
+    margin-bottom: 18px;
   }
 }
 

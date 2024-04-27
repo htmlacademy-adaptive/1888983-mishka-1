@@ -94,7 +94,7 @@
     display: grid;
     grid-template-columns: 1fr 175px;
     padding-left: 50px;
-    padding-top: 80px;
+    padding-top: 78px;
     background: url("../img/reviews-background.jpg") no-repeat left;
 
     @media (min-resolution: 2dppx) {
@@ -107,16 +107,31 @@
     margin-top: 4px;
   }
 
+  .reviews__button {
+    padding: 14px 38px;
+    margin-bottom: 40px;
+  }
+
   .reviews__list {
     grid-column: 1/-1;
     grid-row: 2/3;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .reviews__list--author {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-bottom: 46px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .reviews__handle {
+    margin-top: 6px;
+    font-size: 17px;
   }
 
   .reviews__buttons {
@@ -127,10 +142,7 @@
   .reviews__prev,
   .reviews__next {
     border: none;
-  }
-
-  .reviews__button {
-    margin-bottom: 40px;
+    height: 58px;
   }
 }
 
