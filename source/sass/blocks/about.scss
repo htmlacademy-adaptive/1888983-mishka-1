@@ -13,17 +13,51 @@
 }
 
 .about__item {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   line-height: 20px;
   height: 100px;
 }
 
 .about__image {
   display: flex;
-  margin-bottom: 16px;
   align-items: center;
   width: auto;
   height: 38px;
+}
+
+.about__image--ecology {
+  padding-left: 8px;
+  margin-bottom: 17px;
+}
+
+.about__image--bill {
+  padding-top: 2px;
+  margin-bottom: 27px;
+  height: 27px;
+}
+
+.about__image--heart {
+  padding-left: 7px;
+  padding-top: 3px;
+  margin-bottom: 16px;
+}
+
+.about__image--thread {
+  padding-top: 4px;
+  padding-left: 3px;
+  margin-bottom: 16px;
+}
+
+.about__image--rocket {
+  padding-top: 1px;
+  margin-left: -6px;
+  margin-bottom: 19px;
+}
+
+.about__image--gift {
+  padding-top: 4px;
+  padding-left: 3px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: 321px) and (max-width: $mobile-width-only) {

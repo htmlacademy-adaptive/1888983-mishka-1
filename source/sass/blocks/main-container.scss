@@ -14,7 +14,11 @@
 
 .main-container__featured {
   padding-bottom: 42px;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
+}
+
+.main-container__about {
+  margin-bottom: 36px;
 }
 
 .main-container__reviews {
@@ -28,6 +32,7 @@
 
 .main-container__contacts {
   padding: 0;
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {

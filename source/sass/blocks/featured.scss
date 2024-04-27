@@ -36,8 +36,12 @@
   display: flex;
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
-  padding: 8px 0 12px;
+  padding: 8px 0 11px;
   line-height: 20px;
+}
+
+.featured__item:first-child {
+  padding-top: 0;
 }
 
 .featured__attribute {
@@ -66,7 +70,7 @@
 }
 
 .featured__button {
-  padding: 14px 38px;
+  padding: 16px 38px;
 }
 
 
