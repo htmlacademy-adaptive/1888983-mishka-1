@@ -156,6 +156,11 @@
 
   .reviews__wrapper {
     padding-left: 175px;
+    padding-top: 78px;
+  }
+
+  .reviews__title {
+    margin-top: 0;
   }
 
   .reviews__list {
@@ -164,5 +169,14 @@
 
   .reviews__list--author {
     margin-bottom: 96px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .reviews__handle {
+    margin-top: 0;
   }
 }

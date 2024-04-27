@@ -7,7 +7,7 @@
 .intro::after {
   display: none;
   position: absolute;
-  bottom: -12px;
+  bottom: 0;
   left: 0;
   content: "";
   width: 100%;
@@ -19,6 +19,10 @@
   min-height: 486px;
   background: #f8f8f8;
   margin-bottom: 33px;
+
+  &::after {
+    bottom: -12px;
+  }
 }
 
 .intro__container {
@@ -166,13 +170,19 @@
   }
 
   .intro::after {
-    min-width: 1250px;
+    bottom: 0;
+    min-width: 1150px;
     height: 34px;
-    background: url("../img/zigzag-fill-desktop.svg");
+    background: url("../img/zigzag-fill-desktop-not-index.svg");
   }
 
   .intro--index {
-    margin-bottom: 54px;
+    margin-bottom: 72px;
+
+    &::after {
+      bottom: -16px;
+      background: url("../img/zigzag-fill-desktop.svg");
+    }
   }
 
   .intro__wrapper {
@@ -195,7 +205,13 @@
   }
 
   .intro__list__link {
-    padding-right: 310px;
+    padding-top: 26px;
+    padding-right: 304px;
+
+    &::after {
+      top: 32px;
+      right: 36px;
+    }
   }
 
   .intro__title--index {

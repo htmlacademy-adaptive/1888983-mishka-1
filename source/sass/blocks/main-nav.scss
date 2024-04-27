@@ -276,7 +276,7 @@
   .main-nav__list--user {
     grid-column: 2/3;
     justify-content: end;
-    padding: 0 20px 0 80px;
+    padding: 0 12px 0 80px;
   }
 
   .main-nav__list--user .main-nav__item:last-child {
@@ -289,7 +289,7 @@
   }
 
   .main-nav__link {
-    padding: 32px 30px 32px;
+    padding: 32px 40px 32px 30px;
     font-size: inherit;
   }
 
@@ -313,7 +313,7 @@
   }
 
   .main-nav__link--additional {
-    padding: 20px 23px 20px 30px;
+    padding: 18px 32px 20px 30px;
   }
 
   .main-nav__delivery {

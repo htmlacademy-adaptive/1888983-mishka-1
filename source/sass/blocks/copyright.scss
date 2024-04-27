@@ -8,7 +8,7 @@
 .copyright__text {
   margin-right: 26px;
   font-size: 19px;
-  line-height: 19px;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -19,4 +19,10 @@
 .copyright__link:active svg {
   fill: #46c1ae;
   opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-right: 28px;
+  }
 }
