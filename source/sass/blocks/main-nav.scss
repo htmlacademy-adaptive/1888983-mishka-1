@@ -270,7 +270,7 @@
   .main-nav__list--site {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 0 80px 0 20px;
+    padding: 0 80px 0 15px;
   }
 
   .main-nav__list--user {
@@ -291,6 +291,10 @@
   .main-nav__link {
     padding: 32px 40px 32px 30px;
     font-size: inherit;
+  }
+
+  .main-nav__link--site {
+    padding: 32px 35px;
   }
 
   .main-nav__link--no-text {

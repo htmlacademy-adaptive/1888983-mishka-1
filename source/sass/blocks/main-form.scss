@@ -13,12 +13,20 @@
 }
 
 .main-form__form {
-  margin-bottom: 54px;
+  margin-bottom: 25px;
 }
 
 .main-form__filter {
   padding: 0 30px;
   margin-bottom: 30px;
+}
+
+.main-form__filter--color {
+  margin-bottom: 32px;
+}
+
+.main-form__filter--contacts {
+  margin-bottom: 38px;
 }
 
 .main-form__filter--add {
@@ -29,7 +37,19 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.main-form__title--contacts {
+  margin-bottom: 4px;
+}
+
+.main-form__title--square {
+  margin-bottom: 26px;
+}
+
+.main-form__title--add {
+  margin-bottom: 22px;
 }
 
 .main-form__title::after {
@@ -46,7 +66,11 @@
 }
 
 .main-form__item {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+.main-form__item--contacts {
+  margin-bottom: 34px;
 }
 
 .main-form__item--radio {
@@ -109,6 +133,10 @@
   margin-bottom: 30px;
 }
 
+.main-form__button {
+  font-size: 17px;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-form__wrapper--grey {
     background-color: #ffffff;
@@ -125,18 +153,30 @@
     line-height: 30px;
   }
 
+  .main-form__form {
+    margin-bottom: 50px;
+  }
+
   .main-form__filter {
     display: flex;
-    padding: 50px 50px;
+    padding: 52px 50px 50px;
     margin-bottom: 0;
   }
 
   .main-form__filter--color {
-    padding: 56px 50px 20px;
+    padding: 48px 50px 26px;
   }
 
   .main-form__filter--name {
-    padding: 56px 50px 50px;
+    padding: 46px 50px 48px;
+  }
+
+  .main-form__filter--contacts {
+    padding: 42px 50px 50px;
+  }
+
+  .main-form__filter--add {
+    padding: 50px 50px 52px;
   }
 
   .main-form__title {
@@ -144,16 +184,23 @@
     width: auto;
     min-width: 100px;
     margin-right: 66px;
-    padding-top: 16px;
+    padding-top: 24px;
+  }
+
+  .main-form__title--radio {
+    padding-top: 20px;
+  }
+
+  .main-form__title--square {
+    padding-top: 18px;
+  }
+
+  .main-form__title--add {
+    padding-top: 20px;
   }
 
   .main-form__title::after {
     display: none;
-  }
-
-  .title--form {
-    font-size: 17px;
-    line-height: 16px;
   }
 
   .main-form__list {
@@ -162,12 +209,12 @@
 
   .main-form__control {
     min-height: 52px;
-    padding-left: 70px;
+    padding-left: 80px;
   }
 
   .main-form__list--secondary {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 262px 1fr;
   }
 
   /* Вообще, по макету там 262 пикселя на колонку, но в этом случае
@@ -182,8 +229,12 @@
     margin-bottom: 24px;
   }
 
-  .main-form__item--radio {
-    margin-bottom: 24px;
+  .main-form__item--field {
+    margin-bottom: 20px;
+  }
+
+  .main-form__item--contacts {
+    margin-bottom: 16px;
   }
 
   .main-form__list--contacts {
@@ -222,27 +273,51 @@
   }
 
   .main-form__filter {
-    padding: 50px 225px 50px 100px;
+    padding: 50px 225px 50px 110px;
     max-width: 825px;
   }
 
   .main-form__filter--color {
-    padding: 42px 225px 58px 100px;
+    padding: 48px 225px 28px 110px;
   }
 
   .main-form__filter--name {
-    padding: 44px 225px 50px 100px;
+    padding: 44px 225px 50px 110px;
+  }
+
+  .main-form__filter--contacts {
+    padding-bottom: 38px;
   }
 
   .main-form__title {
     min-width: 100px;
-    margin-right: 26px;
+    margin-right: 16px;
+    padding-top: 24px;
+  }
+
+  .main-form__title--radio {
+    padding-top: 20px;
+  }
+
+  .main-form__title--square {
+    padding-top: 20px;
+  }
+
+  .main-form__title--contacts {
     padding-top: 16px;
+  }
+
+  .main-form__title--add {
+    padding-top: 20px;
+  }
+
+  .main-form__name {
+    padding-top: 4px;
   }
 
   .main-form__list--secondary {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 262px 264px 1fr;
   }
 
   .main-form__wrapper {

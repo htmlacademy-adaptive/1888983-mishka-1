@@ -140,11 +140,6 @@
 
   .intro__list__item {
     min-height: 118px;
-
-    &:hover,
-    &:active {
-      transform: translateY(-5px);
-    }
   }
 
   .intro__list__link {
@@ -180,8 +175,8 @@
     margin-bottom: 72px;
 
     &::after {
-      bottom: -16px;
-      background: url("../img/zigzag-fill-desktop.svg");
+      bottom: -15px;
+      background: url("../img/zigzag-fill-desktop.svg") center;
     }
   }
 
@@ -202,6 +197,13 @@
 
   .intro__list {
     margin: 0 50px;
+  }
+
+  .intro__list__item {
+    &:hover,
+    &:active {
+      transform: translateY(-5px);
+    }
   }
 
   .intro__list__link {

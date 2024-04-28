@@ -82,8 +82,6 @@
         </div>
       </section>
 
-      <!-- Тут поставил внизу марджин 30 пикселей, как в индексе и каталоге. -->
-
       <section class="main-form">
         <div class="main-container main-container__wrapper main-form__header">
           <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
@@ -91,7 +89,7 @@
         </div>
         <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="post">
           <div role="group" class="main-container main-container__wrapper main-form__filter">
-            <h3 class="main-form__title title title--form">Тип</h3>
+            <h3 class="main-form__title title title--form main-form__title--radio">Тип</h3>
             <ul class="main-form__list">
               <li class="main-form__item main-form__item--radio">
                 <label class="main-form__control">
@@ -111,7 +109,7 @@
           </div>
           <div class="main-form__wrapper--grey">
             <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--color">
-              <h3 class="main-form__title title title--form">Цвет</h3>
+              <h3 class="main-form__title title title--form main-form__title--square">Цвет</h3>
               <ul class="main-form__list main-form__list--secondary">
                 <li class="main-form__item">
                   <label class="main-form__control main-form__control--checkbox">
@@ -176,10 +174,10 @@
             </ul>
           </div>
           <div class="main-form__wrapper--grey">
-            <div role="group" class="main-container main-container__wrapper main-form__filter">
+            <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--contacts">
               <ul class="main-form__list main-form__list--contacts">
-                <li class="main-form__item main-form__item--field">
-                  <h3 class="main-form__title title title--form">Тел</h3>
+                <li class="main-form__item main-form__item--field main-form__item--contacts">
+                  <h3 class="main-form__title title title--form main-form__title--contacts">Тел</h3>
                   <div class="form-field">
                     <label class="visually-hidden" for="tel">Телефон:</label>
                     <input class="form-field__field form-field__field--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" autocomplete="on" required>
@@ -188,8 +186,8 @@
                     </svg>
                   </div>
                 </li>
-                <li class="main-form__item main-form__item--field">
-                  <h3 class="main-form__title title title--form">E-mail</h3>
+                <li class="main-form__item main-form__item--field main-form__item--contacts">
+                  <h3 class="main-form__title title title--form main-form__title--contacts">E-mail</h3>
                   <div class="form-field">
                     <label class="visually-hidden" for="email">Электронная почта:</label>
                     <input class="form-field__field form-field__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" autocomplete="on" required>
@@ -202,7 +200,7 @@
             </div>
           </div>
           <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--add">
-            <h3 class="main-form__title title title--form">Доп</h3>
+            <h3 class="main-form__title title title--form main-form__title--add">Доп</h3>
             <label class="visually-hidden" for="additional">Опишите все ваши пожелания к заказу</label>
             <textarea class="main-form__description" name="description" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
