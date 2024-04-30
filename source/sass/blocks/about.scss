@@ -15,7 +15,7 @@
 .about__item {
   margin-bottom: 22px;
   line-height: 20px;
-  height: 100px;
+  min-height: 100px;
 }
 
 .about__image {
@@ -69,11 +69,9 @@
 
 @media (min-width: $tablet-width) {
   .about__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 410px;
+    display: grid;
+    grid-template-columns: 335px 1fr;
+    row-gap: 54px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -87,13 +85,31 @@
   }
 
   .about__item {
-    margin-bottom: 54px;
-    max-width: 325px;
+    margin-bottom: 0;
     line-height: 22px;
   }
 
-  .about__item:nth-child(3n) {
-    margin-bottom: 0;
+  .about__item--bill {
+    grid-row: 2/3;
+  }
+
+  .about__item--heart {
+    grid-row: 3/4;
+  }
+
+  .about__item--thread {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .about__item--rocket {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .about__item--gift {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
   .about__image--ecology {
@@ -126,12 +142,8 @@
     margin-bottom: 40px;
   }
 
-  .about__item {
-    margin-bottom: 52px;
-  }
-
   .about__list {
-    align-content: space-between;
+    grid-template-columns: 350px 1fr;
   }
 
   .about__image--rocket {
@@ -139,10 +151,12 @@
   }
 
   .about__image--gift {
-    padding-top: 4px;
+    padding-top: 0;
+    margin-bottom: 16px;
   }
 
   .about__image--heart {
-    margin-bottom: 20px;
+    padding-top: 0;
+    margin-bottom: 16px;
   }
 }

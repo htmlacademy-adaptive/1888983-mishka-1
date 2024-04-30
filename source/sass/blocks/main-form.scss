@@ -94,6 +94,10 @@
   min-height: 38px;
 }
 
+.main-form__name {
+  padding-right: 10px;
+}
+
 .main-form__description {
   display: block;
   box-sizing: border-box;
@@ -256,10 +260,11 @@
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
+    padding-left: 50px;
   }
 
   .main-form__button {
-    width: 230px;
+    max-width: 230px;
     padding: 16px 30px;
     font-size: 17px;
     margin-right: auto;

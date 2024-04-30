@@ -1,8 +1,9 @@
 .mark {
   box-sizing: border-box;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   border: 2px solid #444444;
 
   &:hover {

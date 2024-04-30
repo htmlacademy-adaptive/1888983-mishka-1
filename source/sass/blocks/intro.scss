@@ -196,10 +196,12 @@
   }
 
   .intro__list {
-    margin: 0 50px;
+    flex-wrap: wrap;
   }
 
   .intro__list__item {
+    max-width: 525px;
+
     &:hover,
     &:active {
       transform: translateY(-5px);

@@ -21,7 +21,7 @@
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 50px;
+    gap: 25px 50px;
   }
 
   .catalog__item:not(:last-child) {
