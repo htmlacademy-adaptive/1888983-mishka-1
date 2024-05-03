@@ -3,6 +3,8 @@
 }
 
 .page__body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   min-width: 320px;
   margin: 0 auto;
@@ -13,6 +15,10 @@
   line-height: 24px;
   background-color: #ffffff;
   color: #444444;
+
+  main {
+    flex-grow: 1;
+  }
 }
 
 .page__body--no-overflow {
