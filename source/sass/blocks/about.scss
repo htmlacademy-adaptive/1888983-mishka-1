@@ -89,25 +89,25 @@
     line-height: 22px;
   }
 
-  .about__item--bill {
+  .about__item:nth-child(2) {
     grid-row: 2/3;
   }
 
-  .about__item--heart {
+  .about__item:nth-child(3) {
     grid-row: 3/4;
   }
 
-  .about__item--thread {
+  .about__item:nth-child(4) {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  .about__item--rocket {
+  .about__item:nth-child(5) {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  .about__item--gift {
+  .about__item:nth-child(6) {
     grid-column: 2/3;
     grid-row: 3/4;
   }
