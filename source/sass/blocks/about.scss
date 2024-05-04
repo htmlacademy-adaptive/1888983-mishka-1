@@ -13,17 +13,52 @@
 }
 
 .about__item {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   line-height: 20px;
-  height: 100px;
+  min-height: 100px;
 }
 
 .about__image {
   display: flex;
-  margin-bottom: 16px;
   align-items: center;
   width: auto;
   height: 38px;
+}
+
+.about__image--ecology {
+  padding-left: 8px;
+  margin-bottom: 17px;
+}
+
+.about__image--bill {
+  padding-top: 2px;
+  margin-bottom: 27px;
+  height: 27px;
+}
+
+.about__image--heart {
+  padding-left: 7px;
+  padding-top: 3px;
+  margin-bottom: 16px;
+}
+
+.about__image--thread {
+  padding-top: 4px;
+  padding-left: 3px;
+  margin-bottom: 16px;
+}
+
+.about__image--rocket {
+  height: 23px;
+  padding-top: 8px;
+  margin-left: -6px;
+  margin-bottom: 27px;
+}
+
+.about__image--gift {
+  padding-top: 4px;
+  padding-left: 3px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: 321px) and (max-width: $mobile-width-only) {
@@ -34,11 +69,9 @@
 
 @media (min-width: $tablet-width) {
   .about__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 410px;
+    display: grid;
+    grid-template-columns: 335px 1fr;
+    row-gap: 54px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -48,17 +81,59 @@
   }
 
   .about__image {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .about__item {
-    margin-bottom: 54px;
-    max-width: 325px;
+    margin-bottom: 0;
     line-height: 22px;
   }
 
-  .about__item:nth-child(3n) {
-    margin-bottom: 0;
+  .about__item:nth-child(2) {
+    grid-row: 2/3;
+  }
+
+  .about__item:nth-child(3) {
+    grid-row: 3/4;
+  }
+
+  .about__item:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .about__item:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .about__item:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .about__image--ecology {
+    margin-bottom: 18px;
+  }
+
+  .about__image--thread {
+    padding-top: 1px;
+    padding-left: 2px;
+    margin-bottom: 18px;
+  }
+
+  .about__image--bill {
+    margin-bottom: 27px;
+  }
+
+  .about__image--rocket {
+    padding-top: 5px;
+    margin-bottom: 28px;
+  }
+
+  .about__image--gift {
+    padding-top: 1px;
+    margin-bottom: 18px;
   }
 }
 
@@ -67,11 +142,21 @@
     margin-bottom: 40px;
   }
 
-  .about__item {
-    margin-bottom: 52px;
+  .about__list {
+    grid-template-columns: 350px 1fr;
   }
 
-  .about__list {
-    align-content: space-between;
+  .about__image--rocket {
+    margin-bottom: 30px;
+  }
+
+  .about__image--gift {
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .about__image--heart {
+    padding-top: 0;
+    margin-bottom: 16px;
   }
 }

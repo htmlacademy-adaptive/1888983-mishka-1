@@ -5,14 +5,19 @@
 .social__list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  width: 142px;
+  width: 144px;
 }
 
 .social__item {
   width: 28px;
   height: 34px;
+}
+
+.social__item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .social__link {

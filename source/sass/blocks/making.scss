@@ -20,12 +20,14 @@
 }
 
 .making__wrapper--text {
-  padding-top: 34px;
+  padding: 32px 32px 0;
 }
 
 .making__icon {
   margin-right: 24px;
 }
+
+// Вот этот значок почему-то неправильно масштабируется. При ширине в 52 пикселя всё хорошо, но по макету он 32. //
 
 .making__title {
   min-width: auto;
@@ -60,12 +62,12 @@
 
 .making__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-size: 13px;
 }
 
 .making__button {
-  padding: 18px 10px;
+  padding: 16px 10px;
   margin-bottom: 32px;
 }
 
@@ -75,8 +77,8 @@
   }
 
   .making__wrapper--title {
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-top: 38px;
+    padding-bottom: 26px;
     border-bottom: none;
   }
 
@@ -95,6 +97,7 @@
 
   .making__text {
     font-size: 15px;
+    margin-bottom: 40px;
   }
 
   .making__button {
@@ -110,7 +113,7 @@
   }
 
   .making__wrapper {
-    padding: 0 56px 0 80px;
+    padding: 0 56px 0 78px;
   }
 
 
@@ -127,7 +130,7 @@
   }
 
   .making__icon {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   .making__text {

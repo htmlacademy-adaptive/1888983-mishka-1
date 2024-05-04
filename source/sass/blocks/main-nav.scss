@@ -156,7 +156,7 @@
   .main-nav__logo {
     position: absolute;
     top: 22px;
-    left: 50px;
+    left: 48px;
     transform: none;
   }
 
@@ -174,6 +174,8 @@
   .main-nav__list--site {
     grid-row: 2/3;
     border: none;
+    padding-left: 32px;
+    width: auto;
   }
 
   .main-nav__list--user {
@@ -195,18 +197,14 @@
   .main-nav__list--site .main-nav__item {
     border: none;
     background-color: transparent;
-
-    &:first-child {
-      margin-left: 32px;
-    }
   }
 
   .main-nav__link {
-    padding: 32px 50px 32px 80px;
+    padding: 32px 50px 32px 82px;
   }
 
   .main-nav__link--no-text {
-    width: 82px;
+    width: 84px;
     height: 88px;
     padding: 0;
   }
@@ -225,7 +223,7 @@
   }
 
   .main-nav__link--site {
-    padding: 22px 14px 18px 20px;
+    padding: 20px 16px 18px 20px;
     font-size: 15px;
   }
 
@@ -240,14 +238,13 @@
   .main-nav__delivery {
     display: block;
     margin-right: 0;
-    padding-right: 50px;
+    padding: 0 50px;
     font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__menu {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -270,27 +267,33 @@
   .main-nav__list--site {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 0 80px 0 20px;
+    align-self: end;
+    padding: 0 80px 0 15px;
   }
 
   .main-nav__list--user {
     grid-column: 2/3;
     justify-content: end;
-    padding: 0 20px 0 80px;
+    align-self: end;
+    padding: 0 12px 0 80px;
+    height: 100%;
   }
 
   .main-nav__list--user .main-nav__item:last-child {
     flex-grow: 0;
   }
 
-  .main-nav__list--site .main-nav__item:first-child {
-    margin-left: 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  .main-nav__list--site .main-nav__item:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-nav__link {
-    padding: 32px 30px 32px;
+    padding: 32px 40px 32px 30px;
     font-size: inherit;
+  }
+
+  .main-nav__link--site {
+    padding: 32px 35px;
   }
 
   .main-nav__link--no-text {
@@ -313,7 +316,7 @@
   }
 
   .main-nav__link--additional {
-    padding: 20px 23px 20px 30px;
+    padding: 18px 32px 20px 30px;
   }
 
   .main-nav__delivery {

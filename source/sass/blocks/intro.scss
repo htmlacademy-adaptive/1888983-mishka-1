@@ -7,7 +7,7 @@
 .intro::after {
   display: none;
   position: absolute;
-  bottom: -12px;
+  bottom: 0;
   left: 0;
   content: "";
   width: 100%;
@@ -18,7 +18,11 @@
 .intro--index {
   min-height: 486px;
   background: #f8f8f8;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
+
+  &::after {
+    bottom: -12px;
+  }
 }
 
 .intro__container {
@@ -66,7 +70,7 @@
   position: relative;
   display: block;
   padding: 24px 160px 30px 30px;
-  font-size: 20px;
+  font-size: 19px;
   color: #ffffff;
 
   &:hover::after {
@@ -111,7 +115,7 @@
   }
 
   .intro--index {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
   }
 
   .intro__wrapper {
@@ -136,26 +140,22 @@
 
   .intro__list__item {
     min-height: 118px;
-
-    &:hover,
-    &:active {
-      transform: translateY(-5px);
-    }
   }
 
   .intro__list__link {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 34px;
+    padding-left: 36px;
 
     &::after {
       top: 30px;
+      right: 32px;
     }
   }
 
   .intro__title--index {
-    font-size: 47px;
-    margin: 154px 52px 372px;
+    margin: 156px 52px 372px;
   }
 }
 
@@ -165,13 +165,19 @@
   }
 
   .intro::after {
-    min-width: 1250px;
+    bottom: 0;
+    min-width: 1150px;
     height: 34px;
-    background: url("../img/zigzag-fill-desktop.svg");
+    background: url("../img/zigzag-fill-desktop-not-index.svg");
   }
 
   .intro--index {
-    margin-bottom: 54px;
+    margin-bottom: 72px;
+
+    &::after {
+      bottom: -15px;
+      background: url("../img/zigzag-fill-desktop.svg") center;
+    }
   }
 
   .intro__wrapper {
@@ -190,11 +196,26 @@
   }
 
   .intro__list {
-    margin: 0 50px;
+    flex-wrap: wrap;
+  }
+
+  .intro__list__item {
+    max-width: 525px;
+
+    &:hover,
+    &:active {
+      transform: translateY(-5px);
+    }
   }
 
   .intro__list__link {
-    padding-right: 310px;
+    padding-top: 26px;
+    padding-right: 304px;
+
+    &::after {
+      top: 32px;
+      right: 36px;
+    }
   }
 
   .intro__title--index {
