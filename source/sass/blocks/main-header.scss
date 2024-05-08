@@ -1,0 +1,9 @@
+.main-header {
+  max-width: 1150px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    margin: 0 auto;
+  }
+}
