@@ -13,7 +13,7 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header main-container">
+    <header class="main-header">
       <nav class="main-nav main-nav--is-closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo logo" href="index.html">
@@ -43,7 +43,7 @@
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--no-text" href="#">
-                <svg class="main-nav__link--icon" width="18" height="18" fill="rgba(0, 0, 0, 0.2)">
+                <svg class="main-nav__icon" width="18" height="18" fill="rgba(0, 0, 0, 0.2)">
                   <use href="img/sprite.svg#search"></use>
                 </svg>
                 <span class="main-nav__text main-nav__text--hidden">Поиск по сайту</span>
@@ -51,7 +51,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--cart" href="#">
-                <svg class="main-nav__link--icon" width="21" height="18" fill="rgba(0, 0, 0, 0.2)">
+                <svg class="main-nav__icon" width="21" height="18" fill="rgba(0, 0, 0, 0.2)">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
                 <span class="main-nav__text">Корзина: пока пуста</span>
@@ -75,20 +75,20 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-container">
       <section class="main-container__intro intro main-container__intro--form">
-        <div class="main-container intro__container">
+        <div class="main-container__center intro__container">
           <h1 class="intro__title title">Вязание на заказ</h1>
         </div>
       </section>
 
       <section class="main-form">
-        <div class="main-container main-container__wrapper main-form__header">
+        <div class="main-container__center main-container__wrapper main-form__header">
           <h2 class="visually-hidden">С удовольствием свяжем для вас что-нибудь на заказ.</h2>
           <p class="main-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
         <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <div role="group" class="main-container main-container__wrapper main-form__filter">
+          <div role="group" class="main-container__center main-container__wrapper main-form__filter">
             <h3 class="main-form__title title title--form main-form__title--radio">Тип</h3>
             <ul class="main-form__list">
               <li class="main-form__item main-form__item--radio">
@@ -107,8 +107,8 @@
               </li>
             </ul>
           </div>
-          <div class="main-form__wrapper--grey">
-            <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--color">
+          <div class="main-form__grey">
+            <div role="group" class="main-container__center main-container__wrapper main-form__filter main-form__filter--color">
               <h3 class="main-form__title title title--form main-form__title--square">Цвет</h3>
               <ul class="main-form__list main-form__list--secondary">
                 <li class="main-form__item">
@@ -156,7 +156,7 @@
               </ul>
             </div>
           </div>
-          <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--name">
+          <div role="group" class="main-container__center main-container__wrapper main-form__filter main-form__filter--name">
             <h3 class="main-form__title title title--form">ФИО</h3>
             <ul class="main-form__list">
               <li class="main-form__item main-form__item--field form-field">
@@ -173,8 +173,8 @@
               </li>
             </ul>
           </div>
-          <div class="main-form__wrapper--grey">
-            <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--contacts">
+          <div class="main-form__grey">
+            <div role="group" class="main-container__center main-container__wrapper main-form__filter main-form__filter--contacts">
               <ul class="main-form__list main-form__list--contacts">
                 <li class="main-form__item main-form__item--field main-form__item--contacts">
                   <h3 class="main-form__title title title--form main-form__title--contacts">Тел</h3>
@@ -199,12 +199,12 @@
               </ul>
             </div>
           </div>
-          <div role="group" class="main-container main-container__wrapper main-form__filter main-form__filter--add">
+          <div role="group" class="main-container__center main-container__wrapper main-form__filter main-form__filter--add">
             <h3 class="main-form__title title title--form main-form__title--add">Доп</h3>
             <label class="visually-hidden" for="additional">Опишите все ваши пожелания к заказу</label>
             <textarea class="main-form__description" name="description" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-          <div role="group" class="main-container main-container__wrapper main-form__wrapper">
+          <div role="group" class="main-container__center main-container__wrapper main-form__wrapper">
             <small class="main-form__note">*Поля обязательны для заполнения</small>
             <button class="main-form__button button button--primary" type="submit">Отправить заказ</button>
           </div>
@@ -213,7 +213,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-container main-footer__wrapper">
+      <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">
           <svg class="logo" width="102" height="34" fill="black" aria-label="Главная страница магазина «Мишка»">
             <use href="img/sprite.svg#logo-footer"></use>

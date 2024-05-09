@@ -1,4 +1,4 @@
-.main-container {
+.main-container__center {
   max-width: 1150px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-container {
+  .main-container__center {
     margin: 0 auto;
   }
 
