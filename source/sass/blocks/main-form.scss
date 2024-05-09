@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.main-form__wrapper--grey {
+.main-form__grey {
   background-color: #f1f1f1;
 }
 
@@ -88,6 +88,10 @@
   padding-left: 60px;
   min-height: 42px;
   align-items: center;
+
+  &:focus-within .mark::after {
+    display: block;
+  }
 }
 
 .main-form__control--checkbox {
@@ -142,7 +146,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-form__wrapper--grey {
+  .main-form__grey {
     background-color: #ffffff;
   }
 }

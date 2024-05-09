@@ -8,7 +8,7 @@
 }
 
 .making__wrapper {
-  padding: 0 30px;
+  padding: 0 32px;
   border: 1px solid #ececec;
 }
 
@@ -25,9 +25,8 @@
 
 .making__icon {
   margin-right: 24px;
+  flex-shrink: 0;
 }
-
-// Вот этот значок почему-то неправильно масштабируется. При ширине в 52 пикселя всё хорошо, но по макету он 32. //
 
 .making__title {
   min-width: auto;

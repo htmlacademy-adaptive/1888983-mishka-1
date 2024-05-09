@@ -49,3 +49,9 @@
     max-width: 190px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    margin: 0 auto;
+  }
+}

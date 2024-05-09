@@ -93,17 +93,17 @@
   opacity: 0.3;
 }
 
-.main-nav__link:hover .main-nav__link--icon {
+.main-nav__link:hover .main-nav__icon {
   opacity: 1;
   fill: #63d1bb;
 }
 
-.main-nav__link:active .main-nav__link--icon {
+.main-nav__link:active .main-nav__icon {
   opacity: 0.3;
   fill: #63d1bb;
 }
 
-.main-nav__link--icon {
+.main-nav__icon {
   position: absolute;
   top: 32px;
   left: 32px;
@@ -245,7 +245,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__menu {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 575px 575px;
     align-items: center;
   }
 
