@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page nojs" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <body class="page__body">
 
     <header class="main-header">
-      <nav class="main-nav main-nav--is-closed main-nav--nojs">
+      <nav class="main-nav main-nav--is-closed">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo logo" href="">
             <picture>
@@ -124,7 +124,7 @@
           </picture>
         </div>
         <p class="featured__price">Цена: 990 руб.</p>
-        <button class="featured__button button button--primary button--index button--modal" type="button">Заказать</button>
+        <a class="featured__button button button--primary button--index button--modal" href="order.html">Заказать</a>
       </section>
 
       <section class="main-container__center main-container__wrapper main-container__about about">
@@ -235,7 +235,17 @@
             </li>
           </ul>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1998.6087787003366!2d30.32046207732083!3d59.938633662100486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU2JzE5LjEiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1709128950374!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contacts__map-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" src="img/map-mobile.jpg" width="260" height="315" srcset="img/map-mobile@2x.jpg 2x" alt="Фотография вязаных корзинок.">
+          </picture>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1998.6087787003366!2d30.32046207732083!3d59.938633662100486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU2JzE5LjEiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1709128950374!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="contacts__wrapper">
           <a class="contacts__button button button--primary button--index" href="#">Напишите нам</a>
         </div>

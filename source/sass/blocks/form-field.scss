@@ -64,7 +64,7 @@
   }
 
   .form-field__field {
-    padding: 16px 18px 13px;
+    padding: 16px 18px;
     font-size: 19px;
     line-height: 18px;
   }
@@ -75,12 +75,12 @@
   }
 
   .form-field__field--tel + .form-field__icon {
-    top: 18px;
+    top: 12px;
     right: 26px;
   }
 
   .form-field__field--email + .form-field__icon {
-    top: 24px;
+    top: 18px;
     right: 22px;
   }
 
@@ -92,8 +92,7 @@
 @media (min-width: $desktop-width) {
   .form-field__field--tel,
   .form-field__field--email {
-    padding: 10px 40px 12px 18px;
-    margin-bottom: 12px;
+    padding: 14px 40px 18px 18px;
   }
 
   .form-field__field--tel + .form-field__icon {
@@ -102,7 +101,7 @@
   }
 
   .form-field__field--email + .form-field__icon {
-    top: 12px;
+    top: 16px;
     right: 4px;
   }
 }

@@ -1,0 +1,19 @@
+.nojs .contacts__map {
+  display: none;
+}
+
+.nojs .contacts__map-image {
+  display: block;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .nojs .main-nav__menu {
+    display: block;
+    position: static;
+  }
+}
