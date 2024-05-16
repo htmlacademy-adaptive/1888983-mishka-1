@@ -61,16 +61,11 @@
   margin-bottom: 18px;
 }
 
-@media (min-width: 321px) and (max-width: $mobile-width-only) {
-  br {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .about__list {
     display: grid;
-    grid-template-columns: 335px 1fr;
+    grid-template-columns: 325px 1fr;
+    column-gap: 10px;
     row-gap: 54px;
     font-size: 20px;
     line-height: 22px;
@@ -143,7 +138,7 @@
   }
 
   .about__list {
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 340px 1fr;
   }
 
   .about__image--rocket {

@@ -205,6 +205,14 @@
     &:hover,
     &:active {
       transform: translateY(-5px);
+      background-color: #59d5bc;
+    }
+  }
+
+  .intro__list__item--secondary {
+    &:hover,
+    &:active {
+      background-color: #46c1ae;
     }
   }
 

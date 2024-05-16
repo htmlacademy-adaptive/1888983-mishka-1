@@ -131,15 +131,6 @@
     min-height: 158px;
     z-index: 10;
   }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__menu {
-    display: block;
-    position: static;
-  }
 }
 
 @media (min-width: $tablet-width) {
