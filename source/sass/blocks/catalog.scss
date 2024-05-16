@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .catalog__list {
